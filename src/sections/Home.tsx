@@ -17,23 +17,27 @@ const Home = () => {
 
         const animate = () => {
             const tl = gsap.timeline();
+            const isMobile = window.innerWidth < 768;
 
-            tl.from(charSpans, {
-                yPercent: -100,
-                duration: 1,
-                stagger: {
-                    amount: 1,
-                    from: "center"
-                },
-                ease: "power4.out",
-            })
-                .from([imageRef.current, subtitleRef.current, cvLinkRef.current].filter(Boolean), {
+            if (!isMobile) {
+                tl.from(charSpans, {
                     yPercent: -100,
-                    autoAlpha: 0,
-                    duration: 1.2,
-                    stagger: 0.1,
-                    ease: "power3.out",
-                }, "-=0.5") // Start slightly before text finishes for smoothness
+                    duration: 1,
+                    stagger: {
+                        amount: 1,
+                        from: "center"
+                    },
+                    ease: "power4.out",
+                });
+            }
+
+            tl.from([imageRef.current, subtitleRef.current, cvLinkRef.current].filter(Boolean), {
+                yPercent: -100,
+                autoAlpha: 0,
+                duration: 1.2,
+                stagger: 0.1,
+                ease: "power3.out",
+            }, isMobile ? 0 : "-=0.5") // Start slightly before text finishes for smoothness
                 .to(".navbar", {
                     autoAlpha: 1,
                     y: 0,

@@ -67,13 +67,13 @@ const Works = () => {
 
                 {/* Top Label */}
                 <div className="reveal-work-item mb-10 md:mb-12">
-                    <span className="font-spline text-xs uppercase tracking-[0.2em] text-[#707070]">
+                    <span className="font-spline text-xs uppercase tracking-[0.2em] text-[#101010]">
                         [ WORKS ]
                     </span>
                     <h2 className="font-spline text-3xl md:text-4xl font-medium tracking-tight text-[#101010] mt-2">
                         Selected Works
                     </h2>
-                    <p className="font-spline text-sm font-light text-[#707070] max-w-[700px] mt-2 leading-relaxed">
+                    <p className="font-spline text-sm font-light text-[#101010] max-w-[700px] mt-2 leading-relaxed">
                         Here's some of what I've been building
                     </p>
                 </div>
@@ -100,7 +100,7 @@ const Works = () => {
                                     {project.title}
                                 </h3>
 
-                                <p className="font-spline text-xs md:text-sm font-light text-[#505050] leading-relaxed flex-grow">
+                                <p className="font-spline text-xs md:text-sm font-light text-[#101010] leading-relaxed flex-grow">
                                     {project.description}
                                 </p>
 

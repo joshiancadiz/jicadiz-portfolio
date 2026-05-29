@@ -176,7 +176,7 @@ const Navbar = () => {
                             key={link.href}
                             href={link.href}
                             onClick={handleLinkClick}
-                            className="mobile-nav-link text-2xl uppercase tracking-[0.15em] font-spline font-medium text-white/90 hover:text-white transition-colors duration-300"
+                            className="mobile-nav-link text-xl uppercase tracking-[0.15em] font-spline text-white/90 hover:text-white transition-colors duration-300"
                         >
                             [ {link.label} ]
                         </a>

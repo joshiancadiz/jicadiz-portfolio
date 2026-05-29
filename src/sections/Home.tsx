@@ -55,7 +55,7 @@ const Home = () => {
     }, []);
 
     return (
-        <section id="home" className="text-[#101010] mt-[80px] pt-[50px] flex flex-col items-center justify-center min-h-[calc(100vh-80px)] w-full">
+        <section id="home" className="text-[#101010] mt-[80px] pt-[50px] flex flex-col items-center justify-start md:justify-center min-h-[calc(100vh-80px)] w-full">
             <div className="w-full flex flex-col items-center justify-center overflow-hidden px-[32px] md:items-center">
                 <div className="flex flex-col items-center w-full md:block md:w-fit md:mx-auto relative z-[2]">
                     {/* Title */}
@@ -96,10 +96,15 @@ const Home = () => {
                     {/* CV Link container */}
                     <div ref={cvLinkRef} className="order-4 md:order-none w-full flex justify-center mt-2 md:mt-4 md:mb-[80px]">
                         <a
-                            href="#"
-                            className="cv-link font-sofia text-[13px] md:text-[14px] font-bold uppercase tracking-[6px] md:tracking-[10px] opacity-80 text-[#101010] hover:opacity-100 transition-opacity duration-300 flex items-center gap-1"
+                            href="/cv portfolio.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cv-link group font-spline text-[11px] md:text-[12px] font-medium uppercase tracking-[0.2em] text-[#101010] border border-[#101010]/20 hover:border-[#101010]/60 hover:bg-[#101010] hover:text-[#F7F7F7] rounded-full px-6 py-3 md:px-8 md:py-3.5 transition-all duration-400 ease-out flex items-center gap-3"
                         >
-                            <span className="text-base md:text-lg leading-none">→</span> VIEW MY CV
+                            <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            View my CV
                         </a>
                     </div>
                 </div>

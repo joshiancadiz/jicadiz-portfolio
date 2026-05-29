@@ -42,7 +42,7 @@ const About = () => {
                 <div ref={contentRef} className="w-full flex flex-col md:flex-row gap-12 md:gap-20 items-start">
 
                     {/* Left side: Avatar Card & Name */}
-                    <div className="reveal-item flex flex-col items-center gap-3">
+                    <div className="reveal-item flex flex-col items-start gap-3">
                         <div className="w-[180px] h-[240px] border border-white/10 flex items-center justify-center bg-white/[0.02] overflow-hidden">
                             <img
                                 src={AboutImage}
@@ -55,10 +55,15 @@ const About = () => {
                             <span className="whitespace-nowrap">Joshua Ian Cadiz</span>
                         </p>
                         <a
-                            href="#"
-                            className="cv-link font-spline text-xs md:text-sm font-medium tracking-[0.08em] text-[#A0A0A0] hover:text-white transition-colors duration-300 whitespace-nowrap flex items-center gap-2 w-[180px] mt-4"
+                            href="/cv portfolio.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cv-link group font-spline text-[10px] md:text-[11px] font-medium uppercase tracking-[0.15em] text-[#A0A0A0] border border-white/10 hover:border-white/40 hover:text-white hover:bg-white/5 rounded-full px-4 py-2 md:px-5 md:py-2.5 transition-all duration-400 ease-out flex items-center gap-2 w-fit mt-4"
                         >
-                            <span className="text-base md:text-lg leading-none">→</span> View my CV
+                            <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            View my CV
                         </a>
                     </div>
 

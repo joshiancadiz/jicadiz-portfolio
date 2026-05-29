@@ -56,7 +56,7 @@ const Home = () => {
 
     return (
         <section id="home" className="text-[#101010] mt-[80px] pt-[50px] flex flex-col items-center justify-center min-h-[calc(100vh-80px)] w-full">
-            <div className="w-full flex flex-col items-center justify-center overflow-hidden px-[32px] md:items-end">
+            <div className="w-full flex flex-col items-center justify-center overflow-hidden px-[32px] md:items-center">
                 <div className="flex flex-col items-center w-full md:block md:w-fit md:mx-auto relative z-[2]">
                     {/* Title */}
                     <div className="order-1 relative z-[2]">

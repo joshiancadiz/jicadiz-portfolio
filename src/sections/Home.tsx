@@ -1,0 +1,107 @@
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import heroImg from '../assets/hero.png';
+
+
+const Home = () => {
+    const titleRef = useRef<HTMLHeadingElement>(null);
+    const subtitleRef = useRef<HTMLParagraphElement>(null);
+    const imageRef = useRef<HTMLImageElement>(null);
+    const cvLinkRef = useRef<HTMLDivElement>(null);
+    const titleWords = ["FRONT-END", "ENGINEER"];
+
+    useEffect(() => {
+        if (!titleRef.current) return;
+
+        const charSpans = titleRef.current.querySelectorAll('.char');
+
+        const animate = () => {
+            const tl = gsap.timeline();
+
+            tl.from(charSpans, {
+                yPercent: -100,
+                duration: 1,
+                stagger: {
+                    amount: 1,
+                    from: "center"
+                },
+                ease: "power4.out",
+            })
+                .from([imageRef.current, subtitleRef.current, cvLinkRef.current].filter(Boolean), {
+                    yPercent: -100,
+                    autoAlpha: 0,
+                    duration: 1.2,
+                    stagger: 0.1,
+                    ease: "power3.out",
+                }, "-=0.5") // Start slightly before text finishes for smoothness
+                .to(".navbar", {
+                    autoAlpha: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: "power2.out",
+                });
+        };
+
+        if (document.readyState === 'complete') {
+            animate();
+        } else {
+            window.addEventListener('load', animate);
+            return () => window.removeEventListener('load', animate);
+        }
+    }, []);
+
+    return (
+        <section id="home" className="text-[#101010] mt-[80px] pt-[50px] flex flex-col items-center justify-center min-h-[calc(100vh-80px)] w-full">
+            <div className="w-full flex flex-col items-center justify-center overflow-hidden px-[32px] md:items-end">
+                <div className="flex flex-col items-center w-full md:block md:w-fit md:mx-auto relative z-[2]">
+                    {/* Title */}
+                    <div className="order-1 relative z-[2]">
+                        <h1 ref={titleRef} className="text-[23.5vw] md:text-[13.3vw] leading-[0.8] font-black font-sofia tracking-[-0.06em] flex flex-col md:flex-row items-center justify-center gap-y-0 md:gap-y-0 md:gap-x-[0.04em] whitespace-nowrap">
+                            {titleWords.map((word, wordIndex) => (
+                                <span key={wordIndex} className="flex">
+                                    {word.split("").map((char, index) => (
+                                        <span
+                                            key={index}
+                                            className="char inline-block"
+                                        >
+                                            {char}
+                                        </span>
+                                    ))}
+                                </span>
+                            ))}
+                        </h1>
+                    </div>
+
+                    {/* Location */}
+                    <p ref={subtitleRef} className="order-2 w-full md:mt-[-10px] md:relative md:z-[2] text-[13px] md:text-[14px] font-sofia font-bold uppercase tracking-[6px] md:tracking-[10px] opacity-80 text-center md:text-right mt-2">
+                        BASED IN PH, ILOILO
+                    </p>
+
+                    {/* Image Container */}
+                    <div className="order-3 md:order-none w-full flex flex-col items-center justify-center py-2 mt-2 md:mt-[-60px] md:mb-[20px] relative z-[1]">
+                        <div className="overflow-hidden">
+                            <img
+                                ref={imageRef}
+                                src={heroImg}
+                                alt="Hero"
+                                className="w-[300px] md:w-[500px] object-contain"
+                            />
+                        </div>
+                    </div>
+
+                    {/* CV Link container */}
+                    <div ref={cvLinkRef} className="order-4 md:order-none w-full flex justify-center mt-2 md:mt-4 md:mb-[80px]">
+                        <a
+                            href="#"
+                            className="cv-link font-sofia text-[13px] md:text-[14px] font-bold uppercase tracking-[6px] md:tracking-[10px] opacity-80 text-[#101010] hover:opacity-100 transition-opacity duration-300 flex items-center gap-1"
+                        >
+                            <span className="text-base md:text-lg leading-none">→</span> VIEW MY CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Home;

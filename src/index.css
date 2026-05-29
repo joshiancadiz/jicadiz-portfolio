@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Sofia+Sans+Condensed:wght@400;500;600;700&family=Spline+Sans+Mono:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-roboto-mono: "Roboto Mono", monospace;
+  --font-sofia: "Sofia Sans Condensed", sans-serif;
+  --font-spline: "Spline Sans Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F7F7F7;
+}

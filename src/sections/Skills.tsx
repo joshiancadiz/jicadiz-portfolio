@@ -64,32 +64,32 @@ const Skills = () => {
     }, []);
 
     const coreSkills = [
+        { name: "Next.js", icons: () => <NextjsIcon /> },
+        { name: "Tailwind CSS", icons: () => <TailwindIcon /> },
+        { name: "Node.js", icons: () => <NodejsIcon /> },
+        { name: "Express.js", icons: () => <ExpressjsIcon /> },
         { name: "HTML5", icons: () => <HTML5Icon /> },
         { name: "CSS3", icons: () => <CSS3Icon /> },
         { name: "JavaScript", icons: () => <JavascriptIcon /> },
         { name: "TypeScript", icons: () => <TypescriptIcon /> },
         { name: "React.js", icons: () => <ReactjsIcon /> },
-        { name: "Tailwind CSS", icons: () => <TailwindIcon /> },
-        { name: "Node.js", icons: () => <NodejsIcon /> },
-        { name: "Express.js", icons: () => <ExpressjsIcon /> },
-        { name: "Next.js", icons: () => <NextjsIcon /> },
     ];
 
     const strongSkills = [
-        { name: "C#", icons: () => <CsharpIcon /> },
-        { name: "Java", icons: () => <JavaIcon /> },
-        { name: "React Native", icons: () => <ReactjsIcon /> },
+        { name: "Git", icons: () => <GitIcon /> },
+        { name: "Github", icons: () => <GithubIcon /> },
+        { name: "ChatGPT", icons: () => <ChatGPTIcon /> },
+        { name: "Claude", icons: () => <ClaudeIcon /> },
+        { name: "Gemini", icons: () => <GeminiIcon /> },
         { name: "Supabase", icons: () => <SupabaseIcon /> },
         { name: "Firebase", icons: () => <FirebaseIcon /> },
         { name: "Figma", icons: () => <FigmaIcon /> },
         { name: "Notion", icons: () => <NotionICon /> },
         { name: "Vercel", icons: () => <VercelIcon /> },
         { name: "Render", icons: () => <RenderIcon /> },
-        { name: "Git", icons: () => <GitIcon /> },
-        { name: "Github", icons: () => <GithubIcon /> },
-        { name: "ChatGPT", icons: () => <ChatGPTIcon /> },
-        { name: "Claude", icons: () => <ClaudeIcon /> },
-        { name: "Gemini", icons: () => <GeminiIcon /> },
+        { name: "C#", icons: () => <CsharpIcon /> },
+        { name: "Java", icons: () => <JavaIcon /> },
+        { name: "React Native", icons: () => <ReactjsIcon /> },
     ];
 
     const familiarSkills = [

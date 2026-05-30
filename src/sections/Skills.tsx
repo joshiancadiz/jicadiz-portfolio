@@ -64,18 +64,21 @@ const Skills = () => {
     }, []);
 
     const coreSkills = [
-        { name: "Tailwind CSS", icons: () => <TailwindIcon /> },
-        { name: "Node.js", icons: () => <NodejsIcon /> },
-        { name: "Express.js", icons: () => <ExpressjsIcon /> },
-        { name: "Next.js", icons: () => <NextjsIcon /> },
         { name: "HTML5", icons: () => <HTML5Icon /> },
         { name: "CSS3", icons: () => <CSS3Icon /> },
         { name: "JavaScript", icons: () => <JavascriptIcon /> },
         { name: "TypeScript", icons: () => <TypescriptIcon /> },
         { name: "React.js", icons: () => <ReactjsIcon /> },
+        { name: "Tailwind CSS", icons: () => <TailwindIcon /> },
+        { name: "Node.js", icons: () => <NodejsIcon /> },
+        { name: "Express.js", icons: () => <ExpressjsIcon /> },
+        { name: "Next.js", icons: () => <NextjsIcon /> },
     ];
 
     const strongSkills = [
+        { name: "C#", icons: () => <CsharpIcon /> },
+        { name: "Java", icons: () => <JavaIcon /> },
+        { name: "React Native", icons: () => <ReactjsIcon /> },
         { name: "Supabase", icons: () => <SupabaseIcon /> },
         { name: "Firebase", icons: () => <FirebaseIcon /> },
         { name: "Figma", icons: () => <FigmaIcon /> },
@@ -87,9 +90,6 @@ const Skills = () => {
         { name: "ChatGPT", icons: () => <ChatGPTIcon /> },
         { name: "Claude", icons: () => <ClaudeIcon /> },
         { name: "Gemini", icons: () => <GeminiIcon /> },
-        { name: "C#", icons: () => <CsharpIcon /> },
-        { name: "Java", icons: () => <JavaIcon /> },
-        { name: "React Native", icons: () => <ReactjsIcon /> },
     ];
 
     const familiarSkills = [

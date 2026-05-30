@@ -52,7 +52,7 @@ const Works = () => {
         },
         {
             title: "Capstone: Smart Aquatic Steward",
-            description: "An IoT system that automates fish tank water quality monitoring, water changes, and feeding schedules using a React Native mobile app.",
+            description: "An award-winning IoT system that automates fish tank water quality monitoring, water changes, and feeding schedules using a React Native mobile app.",
             tech: ["React Native", "Firebase", "Mobile App", "IoT"],
             image: "/projects_image/logoNobg.png",
             link: "https://github.com/joshiancadiz/SASapp",

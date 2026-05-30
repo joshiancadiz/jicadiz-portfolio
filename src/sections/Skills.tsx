@@ -48,9 +48,10 @@ const Skills = () => {
             gsap.from(".reveal-item", {
                 y: 40,
                 opacity: 0,
-                stagger: 0.15,
-                duration: 1.8,
+                stagger: 0.1,
+                duration: 1,
                 ease: "power3.out",
+                force3D: true,
                 scrollTrigger: {
                     trigger: sectionRef.current,
                     start: "top 50%",
@@ -103,7 +104,7 @@ const Skills = () => {
     ];
 
     return (
-        <section ref={sectionRef} id="skills" className="bg-[#101010] text-[#F7F7F7] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32">
+        <section ref={sectionRef} id="skills" className="bg-[#101010] text-[#F7F7F7] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32" style={{ contain: 'layout style paint' }}>
             <div ref={contentRef} className="max-w-5xl w-full px-6 md:px-12 flex flex-col items-start relative z-[2]">
 
                 {/* Header */}
@@ -127,9 +128,9 @@ const Skills = () => {
                         <span className="font-spline text-xs tracking-[0.15em] text-[#A0A0A0] font-light">
                             CORE — USE DAILY
                         </span>
-                        <div className="flex flex-wrap gap-3">
+                        <div className="flex flex-wrap gap-3" style={{ contain: 'content' }}>
                             {coreSkills.map((skill, index) => (
-                                <div key={index} className="border border-indigo-500/25 bg-indigo-500/5 hover:bg-indigo-500/10 hover:border-indigo-500/40 text-indigo-300/90 rounded-xl px-4 py-2 flex items-center gap-2.5 transition duration-300 cursor-pointer">
+                                <div key={index} className="border border-indigo-500/25 bg-indigo-500/5 hover:bg-indigo-500/10 hover:border-indigo-500/40 text-indigo-300/90 rounded-xl px-4 py-2 flex items-center gap-2.5 transition-colors duration-300 cursor-pointer">
                                     {skill.icons()}
                                     <span className="font-spline text-sm font-light">{skill.name}</span>
                                 </div>
@@ -142,9 +143,9 @@ const Skills = () => {
                         <span className="font-spline text-xs tracking-[0.15em] text-[#A0A0A0] font-light">
                             STRONG — USE REGULARLY
                         </span>
-                        <div className="flex flex-wrap gap-3">
+                        <div className="flex flex-wrap gap-3" style={{ contain: 'content' }}>
                             {strongSkills.map((skill, index) => (
-                                <div key={index} className="border border-teal-500/25 bg-teal-500/5 hover:bg-teal-500/10 hover:border-teal-500/40 text-teal-300/90 rounded-xl px-4 py-2 flex items-center gap-2.5 transition duration-300 cursor-pointer">
+                                <div key={index} className="border border-teal-500/25 bg-teal-500/5 hover:bg-teal-500/10 hover:border-teal-500/40 text-teal-300/90 rounded-xl px-4 py-2 flex items-center gap-2.5 transition-colors duration-300 cursor-pointer">
                                     {skill.icons()}
                                     <span className="font-spline text-sm font-light">{skill.name}</span>
                                 </div>
@@ -157,9 +158,9 @@ const Skills = () => {
                         <span className="font-spline text-xs tracking-[0.15em] text-[#A0A0A0] font-light">
                             FAMILIAR — USE WHEN NEEDED
                         </span>
-                        <div className="flex flex-wrap gap-3">
+                        <div className="flex flex-wrap gap-3" style={{ contain: 'content' }}>
                             {familiarSkills.map((skill, index) => (
-                                <div key={index} className="border border-yellow-500/25 bg-yellow-500/5 hover:bg-yellow-500/10 hover:border-yellow-500/40 text-yellow-300/90 rounded-xl px-4 py-2 flex items-center gap-2.5 transition duration-300 cursor-pointer">
+                                <div key={index} className="border border-yellow-500/25 bg-yellow-500/5 hover:bg-yellow-500/10 hover:border-yellow-500/40 text-yellow-300/90 rounded-xl px-4 py-2 flex items-center gap-2.5 transition-colors duration-300 cursor-pointer">
                                     {skill.icons()}
                                     <span className="font-spline text-sm font-light">{skill.name}</span>
                                 </div>
@@ -172,15 +173,15 @@ const Skills = () => {
                 {/* Legend */}
                 <div className="reveal-item flex gap-6 mt-10 md:mt-14">
                     <div className="flex items-center gap-2">
-                        <span className="w-2.5 h-2.5 rounded-full bg-indigo-500/60 border border-indigo-400/50 animate-pulse"></span>
+                        <span className="w-2.5 h-2.5 rounded-full bg-indigo-500/60 border border-indigo-400/50"></span>
                         <span className="font-spline text-xs text-[#A0A0A0] font-light">Core</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <span className="w-2.5 h-2.5 rounded-full bg-teal-500/60 border border-teal-400/50 animate-pulse"></span>
+                        <span className="w-2.5 h-2.5 rounded-full bg-teal-500/60 border border-teal-400/50"></span>
                         <span className="font-spline text-xs text-[#A0A0A0] font-light">Strong</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/60 border border-yellow-400/50 animate-pulse"></span>
+                        <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/60 border border-yellow-400/50"></span>
                         <span className="font-spline text-xs text-[#A0A0A0] font-light">Familiar</span>
                     </div>
                 </div>
@@ -190,16 +191,16 @@ const Skills = () => {
                     <span className="font-spline text-xs tracking-[0.15em] text-[#A0A0A0] font-light">
                         DEVELOPMENT TOOLS / ENVIRONMENT
                     </span>
-                    <div className="flex flex-wrap gap-3">
-                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 flex items-center gap-2.5 transition duration-300 cursor-pointer">
+                    <div className="flex flex-wrap gap-3" style={{ contain: 'content' }}>
+                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 flex items-center gap-2.5 transition-colors duration-300 cursor-pointer">
                             <VSCodeIcon />
                             <span className="font-spline text-sm font-light">VSCode</span>
                         </div>
-                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 flex items-center gap-2.5 transition duration-300 cursor-pointer">
+                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 flex items-center gap-2.5 transition-colors duration-300 cursor-pointer">
                             <CursorIcon />
                             <span className="font-spline text-sm font-light">Cursor</span>
                         </div>
-                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 flex items-center gap-2.5 transition duration-300 cursor-pointer">
+                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 flex items-center gap-2.5 transition-colors duration-300 cursor-pointer">
                             <AntigravityIcon />
                             <span className="font-spline text-sm font-light">Antigravity</span>
                         </div>

@@ -1,6 +1,6 @@
 import StackIcon from 'tech-stack-icons';
 
-export const HTML5Icon = ({ className = "w-[18px] h-[18px] flex-shrink-0" }: { className?: string }) => {
+export const HTML5Icon = () => {
     return (
         <div className="w-[18px] h-[18px] flex items-center justify-center"><div className='w-[18px] h-[18px] flex-shrink-0'><StackIcon name="antigravity" /></div></div>
     );

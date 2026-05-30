@@ -1,8 +1,13 @@
 import StackIcon from 'tech-stack-icons';
 
-export const HTML5Icon = () => {
+export const HTML5Icon = ({ className = "w-[18px] h-[18px] flex-shrink-0" }: { className?: string }) => {
     return (
-        <div className="w-[18px] h-[18px] flex items-center justify-center"><div className='w-[18px] h-[18px] flex-shrink-0'><StackIcon name="antigravity" /></div></div>
+        <svg className={className} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#e44d26" d="M14.021 90.034 6 0h88.187l-8.022 89.985L50.02 100" />
+            <path fill="#f16529" d="M50.093 92.344V7.39h36.048l-6.88 76.811" />
+            <path fill="#ebebeb" d="M22.383 18.4h27.71v11.036H34.488L35.51 40.74h14.584v11.01H25.397zm3.5 38.893h11.084l.778 8.823 12.348 3.306v11.521l-22.654-6.32" />
+            <path fill="#fff" d="M77.706 18.4H50.044v11.036h26.64zm-2.018 22.34H50.044v11.035h13.612l-1.288 14.341-12.324 3.306v11.473l22.606-6.271" />
+        </svg>
     );
 };
 
@@ -12,7 +17,7 @@ export const CSS3Icon = ({ className = "w-[18px] h-[18px] flex-shrink-0" }: { cl
             <path fill="#264de4" d="m94.175 0-8.033 89.99L50.034 100l-36.01-9.996L6 0z" />
             <path fill="#2965f1" d="m79.265 84.26 6.865-76.9H50.088v84.988z" />
             <path fill="#ebebeb" d="m24.396 40.74.99 11.039h24.702V40.74zm25.692-22.342h-27.68l1.003 11.038h26.676zm0 62.495V69.408l-.049.013-12.294-3.32-.786-8.803H25.878l1.547 17.332 22.612 6.277z" />
-            <path fill="#fff" d="m63.642 51.779-1.281 14.316-12.312 3.323v11.484l22.63-6.272.166-1.865 2.594-29.06.27-2.965L77.7 18.398H50.05v11.038h15.555L64.599 40。74H50.05v11。04z" />
+            <path fill="#fff" d="m63.642 51.779-1.281 14.316-12.312 3.323v11.484l22.63-6.272.166-1.865 2.594-29.06.27-2.965L77.7 18.398H50.05v11.038h15.555L64.599 40.74H50.05v11.04z" />
         </svg>
     );
 };

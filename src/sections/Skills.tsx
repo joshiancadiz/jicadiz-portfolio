@@ -126,7 +126,7 @@ const Skills = () => {
                     {/* Category 1: CORE */}
                     <div className="reveal-item flex flex-col gap-3">
                         <span className="font-spline text-xs tracking-[0.15em] text-[#A0A0A0] font-light">
-                            CORE — USE DAILY
+                            CORE — USED DAILY
                         </span>
                         <div className="flex flex-wrap gap-3" style={{ contain: 'content' }}>
                             {coreSkills.map((skill, index) => (
@@ -141,7 +141,7 @@ const Skills = () => {
                     {/* Category 2: STRONG */}
                     <div className="reveal-item flex flex-col gap-3">
                         <span className="font-spline text-xs tracking-[0.15em] text-[#A0A0A0] font-light">
-                            STRONG — USE REGULARLY
+                            STRONG — USED REGULARLY
                         </span>
                         <div className="flex flex-wrap gap-3" style={{ contain: 'content' }}>
                             {strongSkills.map((skill, index) => (
@@ -156,7 +156,7 @@ const Skills = () => {
                     {/* Category 3: FAMILIAR */}
                     <div className="reveal-item flex flex-col gap-3">
                         <span className="font-spline text-xs tracking-[0.15em] text-[#A0A0A0] font-light">
-                            FAMILIAR — USE WHEN NEEDED
+                            FAMILIAR — USED WHEN NEEDED
                         </span>
                         <div className="flex flex-wrap gap-3" style={{ contain: 'content' }}>
                             {familiarSkills.map((skill, index) => (

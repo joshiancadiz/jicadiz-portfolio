@@ -104,65 +104,65 @@ const Skills = () => {
     ];
 
     return (
-        <section ref={sectionRef} id="skills" className="bg-[#101010] text-[#F7F7F7] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32" style={{ contain: 'layout style paint' }}>
-            <div ref={contentRef} className="max-w-5xl w-full px-6 md:px-12 flex flex-col items-start relative z-[2]">
+        <section ref={sectionRef} id="skills" className="bg-[#101010] text-[#F7F7F7] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32 xl:py-40" style={{ contain: 'layout style paint' }}>
+            <div ref={contentRef} className="max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full px-6 md:px-12 xl:px-16 2xl:px-20 flex flex-col items-start relative z-[2]">
 
                 {/* Header */}
-                <div className="reveal-item flex flex-col gap-2 mb-6 md:mb-10">
-                    <span className="font-spline text-xs uppercase tracking-[0.2em] text-[#707070]">
+                <div className="reveal-item flex flex-col gap-2 mb-6 md:mb-10 xl:mb-14">
+                    <span className="font-spline text-xs xl:text-sm uppercase tracking-[0.2em] text-[#707070]">
                         [ SKILLS ]
                     </span>
-                    <h2 className="font-spline text-3xl md:text-4xl lg:text-[40px] font-medium tracking-tight text-white mt-2">
+                    <h2 className="font-spline text-3xl md:text-4xl lg:text-[40px] xl:text-[46px] 2xl:text-[50px] font-medium tracking-tight text-white mt-2">
                         Tools & Technologies
                     </h2>
-                    <p className="font-spline text-sm md:text-base font-light text-[#A0A0A0] max-w-[700px] mt-1 leading-relaxed">
+                    <p className="font-spline text-sm md:text-base xl:text-lg font-light text-[#A0A0A0] max-w-[700px] xl:max-w-[800px] mt-1 leading-relaxed">
                         Grouped by how often I actually use them.
                     </p>
                 </div>
 
                 {/* Categories */}
-                <div className="w-full flex flex-col gap-10 md:gap-12">
+                <div className="w-full flex flex-col gap-10 md:gap-12 xl:gap-14">
 
                     {/* Category 1: CORE */}
-                    <div className="reveal-item flex flex-col gap-3">
-                        <span className="font-spline text-xs tracking-[0.15em] text-[#A0A0A0] font-light">
+                    <div className="reveal-item flex flex-col gap-3 xl:gap-4">
+                        <span className="font-spline text-xs xl:text-sm tracking-[0.15em] text-[#A0A0A0] font-light">
                             CORE — USED DAILY
                         </span>
-                        <div className="flex flex-wrap gap-3" style={{ contain: 'content' }}>
+                        <div className="flex flex-wrap gap-3 xl:gap-4" style={{ contain: 'content' }}>
                             {coreSkills.map((skill, index) => (
-                                <div key={index} className="border border-indigo-500/25 bg-indigo-500/5 hover:bg-indigo-500/10 hover:border-indigo-500/40 text-indigo-300/90 rounded-xl px-4 py-2 flex items-center gap-2.5 transition-colors duration-300 cursor-pointer">
+                                <div key={index} className="border border-indigo-500/25 bg-indigo-500/5 hover:bg-indigo-500/10 hover:border-indigo-500/40 text-indigo-300/90 rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
                                     {skill.icons()}
-                                    <span className="font-spline text-sm font-light">{skill.name}</span>
+                                    <span className="font-spline text-sm xl:text-base font-light">{skill.name}</span>
                                 </div>
                             ))}
                         </div>
                     </div>
 
                     {/* Category 2: STRONG */}
-                    <div className="reveal-item flex flex-col gap-3">
-                        <span className="font-spline text-xs tracking-[0.15em] text-[#A0A0A0] font-light">
+                    <div className="reveal-item flex flex-col gap-3 xl:gap-4">
+                        <span className="font-spline text-xs xl:text-sm tracking-[0.15em] text-[#A0A0A0] font-light">
                             STRONG — USED REGULARLY
                         </span>
-                        <div className="flex flex-wrap gap-3" style={{ contain: 'content' }}>
+                        <div className="flex flex-wrap gap-3 xl:gap-4" style={{ contain: 'content' }}>
                             {strongSkills.map((skill, index) => (
-                                <div key={index} className="border border-teal-500/25 bg-teal-500/5 hover:bg-teal-500/10 hover:border-teal-500/40 text-teal-300/90 rounded-xl px-4 py-2 flex items-center gap-2.5 transition-colors duration-300 cursor-pointer">
+                                <div key={index} className="border border-teal-500/25 bg-teal-500/5 hover:bg-teal-500/10 hover:border-teal-500/40 text-teal-300/90 rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
                                     {skill.icons()}
-                                    <span className="font-spline text-sm font-light">{skill.name}</span>
+                                    <span className="font-spline text-sm xl:text-base font-light">{skill.name}</span>
                                 </div>
                             ))}
                         </div>
                     </div>
 
                     {/* Category 3: FAMILIAR */}
-                    <div className="reveal-item flex flex-col gap-3">
-                        <span className="font-spline text-xs tracking-[0.15em] text-[#A0A0A0] font-light">
+                    <div className="reveal-item flex flex-col gap-3 xl:gap-4">
+                        <span className="font-spline text-xs xl:text-sm tracking-[0.15em] text-[#A0A0A0] font-light">
                             FAMILIAR — USED WHEN NEEDED
                         </span>
-                        <div className="flex flex-wrap gap-3" style={{ contain: 'content' }}>
+                        <div className="flex flex-wrap gap-3 xl:gap-4" style={{ contain: 'content' }}>
                             {familiarSkills.map((skill, index) => (
-                                <div key={index} className="border border-yellow-500/25 bg-yellow-500/5 hover:bg-yellow-500/10 hover:border-yellow-500/40 text-yellow-300/90 rounded-xl px-4 py-2 flex items-center gap-2.5 transition-colors duration-300 cursor-pointer">
+                                <div key={index} className="border border-yellow-500/25 bg-yellow-500/5 hover:bg-yellow-500/10 hover:border-yellow-500/40 text-yellow-300/90 rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
                                     {skill.icons()}
-                                    <span className="font-spline text-sm font-light">{skill.name}</span>
+                                    <span className="font-spline text-sm xl:text-base font-light">{skill.name}</span>
                                 </div>
                             ))}
                         </div>
@@ -171,38 +171,38 @@ const Skills = () => {
                 </div>
 
                 {/* Legend */}
-                <div className="reveal-item flex gap-6 mt-10 md:mt-14">
+                <div className="reveal-item flex gap-6 xl:gap-8 mt-10 md:mt-14 xl:mt-16">
                     <div className="flex items-center gap-2">
                         <span className="w-2.5 h-2.5 rounded-full bg-indigo-500/60 border border-indigo-400/50"></span>
-                        <span className="font-spline text-xs text-[#A0A0A0] font-light">Core</span>
+                        <span className="font-spline text-xs xl:text-sm text-[#A0A0A0] font-light">Core</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <span className="w-2.5 h-2.5 rounded-full bg-teal-500/60 border border-teal-400/50"></span>
-                        <span className="font-spline text-xs text-[#A0A0A0] font-light">Strong</span>
+                        <span className="font-spline text-xs xl:text-sm text-[#A0A0A0] font-light">Strong</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/60 border border-yellow-400/50"></span>
-                        <span className="font-spline text-xs text-[#A0A0A0] font-light">Familiar</span>
+                        <span className="font-spline text-xs xl:text-sm text-[#A0A0A0] font-light">Familiar</span>
                     </div>
                 </div>
 
                 {/* Development Tools / Environment */}
-                <div className="reveal-item flex flex-col gap-3 mt-10 md:mt-12">
-                    <span className="font-spline text-xs tracking-[0.15em] text-[#A0A0A0] font-light">
+                <div className="reveal-item flex flex-col gap-3 xl:gap-4 mt-10 md:mt-12 xl:mt-16">
+                    <span className="font-spline text-xs xl:text-sm tracking-[0.15em] text-[#A0A0A0] font-light">
                         DEVELOPMENT TOOLS / ENVIRONMENT
                     </span>
-                    <div className="flex flex-wrap gap-3" style={{ contain: 'content' }}>
-                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 flex items-center gap-2.5 transition-colors duration-300 cursor-pointer">
+                    <div className="flex flex-wrap gap-3 xl:gap-4" style={{ contain: 'content' }}>
+                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
                             <VSCodeIcon />
-                            <span className="font-spline text-sm font-light">VSCode</span>
+                            <span className="font-spline text-sm xl:text-base font-light">VSCode</span>
                         </div>
-                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 flex items-center gap-2.5 transition-colors duration-300 cursor-pointer">
+                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
                             <CursorIcon />
-                            <span className="font-spline text-sm font-light">Cursor</span>
+                            <span className="font-spline text-sm xl:text-base font-light">Cursor</span>
                         </div>
-                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 flex items-center gap-2.5 transition-colors duration-300 cursor-pointer">
+                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
                             <AntigravityIcon />
-                            <span className="font-spline text-sm font-light">Antigravity</span>
+                            <span className="font-spline text-sm xl:text-base font-light">Antigravity</span>
                         </div>
                     </div>
                 </div>

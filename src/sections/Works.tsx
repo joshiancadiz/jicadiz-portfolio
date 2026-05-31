@@ -62,24 +62,24 @@ const Works = () => {
     ];
 
     return (
-        <section ref={sectionRef} id="works" className="bg-[#F7F7F7] text-[#101010] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32">
-            <div className="max-w-5xl w-full px-6 md:px-12 flex flex-col items-start relative z-[2]">
+        <section ref={sectionRef} id="works" className="bg-[#F7F7F7] text-[#101010] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32 xl:py-40">
+            <div className="max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full px-6 md:px-12 xl:px-16 2xl:px-20 flex flex-col items-start relative z-[2]">
 
                 {/* Top Label */}
-                <div className="reveal-work-item mb-10 md:mb-12">
-                    <span className="font-spline text-xs uppercase tracking-[0.2em] text-[#101010]">
+                <div className="reveal-work-item mb-10 md:mb-12 xl:mb-16">
+                    <span className="font-spline text-xs xl:text-sm uppercase tracking-[0.2em] text-[#101010]">
                         [ WORKS ]
                     </span>
-                    <h2 className="font-spline text-3xl md:text-4xl font-medium tracking-tight text-[#101010] mt-2">
+                    <h2 className="font-spline text-3xl md:text-4xl xl:text-[46px] 2xl:text-[50px] font-medium tracking-tight text-[#101010] mt-2">
                         Selected Works
                     </h2>
-                    <p className="font-spline text-sm font-light text-[#101010] max-w-[700px] mt-2 leading-relaxed">
+                    <p className="font-spline text-sm xl:text-base font-light text-[#101010] max-w-[700px] xl:max-w-[800px] mt-2 leading-relaxed">
                         Here's some of what I've been building
                     </p>
                 </div>
 
                 {/* Projects Grid */}
-                <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mt-4">
+                <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 xl:gap-10 mt-4">
                     {projects.map((project, index) => (
                         <div
                             key={index}
@@ -95,32 +95,32 @@ const Works = () => {
                             </div>
 
                             {/* Content */}
-                            <div className="p-5 md:p-6 flex flex-col flex-grow gap-3.5">
-                                <h3 className="font-spline text-lg md:text-xl font-semibold tracking-tight text-[#101010]">
+                            <div className="p-5 md:p-6 xl:p-8 flex flex-col flex-grow gap-3.5 xl:gap-4">
+                                <h3 className="font-spline text-lg md:text-xl xl:text-2xl font-semibold tracking-tight text-[#101010]">
                                     {project.title}
                                 </h3>
 
-                                <p className="font-spline text-xs md:text-sm font-light text-[#101010] leading-relaxed flex-grow">
+                                <p className="font-spline text-xs md:text-sm xl:text-base font-light text-[#101010] leading-relaxed flex-grow">
                                     {project.description}
                                 </p>
 
                                 {/* Tech badges */}
-                                <div className="flex flex-wrap gap-1 mt-1">
+                                <div className="flex flex-wrap gap-1 xl:gap-1.5 mt-1">
                                     {project.tech.map((techItem, idx) => (
-                                        <span key={idx} className="font-spline text-[10px] border border-black/10 rounded-full px-2.5 py-0.5 text-[#606060] bg-black/[0.02]">
+                                        <span key={idx} className="font-spline text-[10px] xl:text-xs border border-black/10 rounded-full px-2.5 py-0.5 xl:px-3 xl:py-1 text-[#606060] bg-black/[0.02]">
                                             {techItem}
                                         </span>
                                     ))}
                                 </div>
 
                                 {/* GitHub & Demo Buttons */}
-                                <div className="pt-3 mt-auto flex flex-col gap-2">
+                                <div className="pt-3 xl:pt-4 mt-auto flex flex-col gap-2">
                                     {project.demoLink && (
                                         <a
                                             href={project.demoLink}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-block text-center font-spline text-xs uppercase tracking-[0.1em] font-medium bg-[#101010] text-white border border-[#101010] hover:bg-transparent hover:text-[#101010] px-4 py-2 transition-all duration-300"
+                                            className="inline-block text-center font-spline text-xs xl:text-sm uppercase tracking-[0.1em] font-medium bg-[#101010] text-white border border-[#101010] hover:bg-transparent hover:text-[#101010] px-4 py-2 xl:px-5 xl:py-2.5 transition-all duration-300"
                                         >
                                             Live Demo Link
                                         </a>
@@ -130,7 +130,7 @@ const Works = () => {
                                             href={project.videoDemoLink}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-block text-center font-spline text-xs uppercase tracking-[0.1em] font-medium bg-[#101010] text-white border border-[#101010] hover:bg-transparent hover:text-[#101010] px-4 py-2 transition-all duration-300"
+                                            className="inline-block text-center font-spline text-xs xl:text-sm uppercase tracking-[0.1em] font-medium bg-[#101010] text-white border border-[#101010] hover:bg-transparent hover:text-[#101010] px-4 py-2 xl:px-5 xl:py-2.5 transition-all duration-300"
                                         >
                                             Video Demo Link
                                         </a>
@@ -139,7 +139,7 @@ const Works = () => {
                                         href={project.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-block text-center font-spline text-xs uppercase tracking-[0.1em] font-medium border border-[#101010] text-[#101010] hover:bg-[#101010] hover:text-white px-4 py-2 transition-all duration-300"
+                                        className="inline-block text-center font-spline text-xs xl:text-sm uppercase tracking-[0.1em] font-medium border border-[#101010] text-[#101010] hover:bg-[#101010] hover:text-white px-4 py-2 xl:px-5 xl:py-2.5 transition-all duration-300"
                                     >
                                         View On GitHub
                                     </a>

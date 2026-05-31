@@ -94,10 +94,10 @@ const Navbar = () => {
                 ref={navRef}
                 className="fixed top-0 left-0 w-full z-50 text-white mix-blend-difference opacity-0 navbar"
             >
-                <div className="flex items-center justify-between h-20 px-[32px]">
+                <div className="flex items-center justify-between h-20 px-[32px] xl:px-[64px] xl:h-24">
                     <div className="flex-shrink-0">
                         <a href="/" className="flex items-center">
-                            <h1 className="text-2xl font-bold tracking-[-1px] font-sofia">
+                            <h1 className="text-2xl xl:text-3xl font-bold tracking-[-1px] font-sofia">
                                 JI CADIZ
                             </h1>
                         </a>
@@ -109,7 +109,7 @@ const Navbar = () => {
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className="text-sm uppercase transition-opacity duration-300 hover:opacity-70 font-spline"
+                                className="text-sm xl:text-base uppercase transition-opacity duration-300 hover:opacity-70 font-spline"
                             >
                                 [ {link.label} ]
                             </a>
@@ -118,7 +118,7 @@ const Navbar = () => {
 
                     {/* Desktop Time */}
                     <div className="hidden md:block flex-shrink-0">
-                        <div className="text-sm font-medium uppercase font-spline">
+                        <div className="text-sm xl:text-base font-medium uppercase font-spline">
                             [ {currentTime} ]
                         </div>
                     </div>

@@ -71,7 +71,7 @@ const About = () => {
                     <div className="flex-1 flex flex-col gap-6 md:gap-8 xl:gap-10">
                         <div className="reveal-item flex flex-col gap-3">
                             <p className="font-spline text-sm xl:text-base text-[#A0A0A0] tracking-wide">
-                                Front-End Software Engineer
+                                Junior Software Engineer
                             </p>
                             <h2 className="font-spline text-3xl md:text-4xl lg:text-[40px] xl:text-[46px] 2xl:text-[50px] font-medium tracking-tight text-white leading-tight">
                                 I build interfaces that<br />are fast, clean, and easy to use.
@@ -116,9 +116,9 @@ const About = () => {
                                 My Experience
                             </span>
                         </div>
-                        <span className="font-spline text-sm xl:text-base text-[#A0A0A0] pl-5.5">
+                        {/* <span className="font-spline text-sm xl:text-base text-[#A0A0A0] pl-5.5">
                             2025-2026
-                        </span>
+                        </span> */}
                     </div>
 
                     {/* Right side: Experience details */}
@@ -128,12 +128,12 @@ const About = () => {
                                 Full-Stack Engineer Intern
                             </h3>
                             <p className="font-spline text-xs md:text-sm xl:text-base text-[#A0A0A0] tracking-wide">
-                                at VIP Scale, Iloilo City, Philippines
+                                at VIP Scale · 2025-2026
                             </p>
                         </div>
                         <div className="reveal-item flex flex-col gap-4 font-spline text-sm md:text-[15px] xl:text-[16px] 2xl:text-[17px] font-light text-[#A0A0A0] leading-relaxed max-w-[650px] xl:max-w-[750px] 2xl:max-w-[850px]">
                             <p>
-                                Built and maintained websites for international clients using Kajabi and GoHighLevel, leveraging AI tools to generate and deliver tailored content that supported their business goals.
+                                Built and maintained websites for international clients using Kajabi and GoHighLevel, leveraging AI tools such as Gemini and Claude to generate tailored content and images that supported their marketing campaigns and business goals.
                             </p>
                             <p>
                                 Developed full-stack applications using React.js and integrating with automation tools such as n8n to connect APIs and services to automate content generation workflows, driving significant improvements in business efficiency.

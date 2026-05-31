@@ -71,7 +71,7 @@ const About = () => {
                     <div className="flex-1 flex flex-col gap-6 md:gap-8">
                         <div className="reveal-item flex flex-col gap-3">
                             <p className="font-spline text-sm text-[#A0A0A0] tracking-wide">
-                                Front-End Software Engineer • 1 Year Experience
+                                Front-End Software Engineer
                             </p>
                             <h2 className="font-spline text-3xl md:text-4xl lg:text-[40px] font-medium tracking-tight text-white leading-tight">
                                 I build interfaces that<br />are fast, clean, and easy to use.
@@ -80,10 +80,10 @@ const About = () => {
 
                         <div className="reveal-item flex flex-col gap-4 font-spline text-sm md:text-[15px] font-light text-[#A0A0A0] leading-relaxed max-w-[650px]">
                             <p>
-                                I'm a Software Engineer specialized in <span className="text-white font-medium">Front-End Development</span>, turning complex workflows into simple, intuitive web experiences. My work sits at the intersection of design and engineering. I care as much about how something feels as how it's built.
+                                I'm a Software Engineer specialized in <span className="text-white font-medium">Front-End Development</span>, turning complex workflows into simple, intuitive web experiences.
                             </p>
                             <p>
-                                I've built and maintained client websites and shipped full-stack tools that streamline real workflows, always focused on reducing friction for the end user.
+                                I've built and maintained client websites and developed full-stack tools that streamline real workflows, always focused on reducing friction for the end user.
                             </p>
                         </div>
 
@@ -102,6 +102,47 @@ const About = () => {
                     </div>
 
                 </div>
+
+                {/* Experience Section */}
+                <div className="w-full flex flex-col md:flex-row gap-12 md:gap-20 items-start mt-16 md:mt-20">
+
+                    {/* Left side: Label aligned with image */}
+                    <div className="reveal-item flex flex-col gap-1 w-[180px] shrink-0">
+                        <div className="flex items-center gap-2">
+                            <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            <span className="font-spline text-sm md:text-[15px] font-medium text-white tracking-wide">
+                                My Experience
+                            </span>
+                        </div>
+                        <span className="font-spline text-sm text-[#A0A0A0] pl-5.5">
+                            2025-2026
+                        </span>
+                    </div>
+
+                    {/* Right side: Experience details */}
+                    <div className="flex-1 flex flex-col gap-6 md:gap-8">
+                        <div className="reveal-item flex flex-col gap-3">
+                            <h3 className="font-spline text-xl md:text-2xl font-medium tracking-tight text-white leading-tight">
+                                Full-Stack Engineer Intern
+                            </h3>
+                            <p className="font-spline text-xs md:text-sm text-[#A0A0A0] tracking-wide">
+                                at VIP Scale, Iloilo City, Philippines
+                            </p>
+                        </div>
+                        <div className="reveal-item flex flex-col gap-4 font-spline text-sm md:text-[15px] font-light text-[#A0A0A0] leading-relaxed max-w-[650px]">
+                            <p>
+                                Built and maintained websites for international clients using Kajabi and GoHighLevel, leveraging AI tools to generate and deliver tailored content that supported their business goals.
+                            </p>
+                            <p>
+                                Developed full-stack applications using React.js and integrating with automation tools such as n8n to connect APIs and services to automate content generation workflows, driving significant improvements in business efficiency.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
             {/* Scroll Indicator */}

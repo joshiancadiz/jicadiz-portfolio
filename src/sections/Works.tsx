@@ -44,7 +44,7 @@ const Works = () => {
         },
         {
             title: "Prismo AI",
-            description: "Prismo AI is a desktop web application that extracts transcripts from YouTube videos and shorts, then processes them using AI-powered tools",
+            description: "Prismo AI is a desktop web application that extracts transcripts from YouTube videos and shorts, then processes them using AI-powered tools. A useful tool for content creators.",
             tech: ["Next.js", "React", "Supabase", "TypeScript", "AI Integration"],
             image: "/projects_image/prismoImg.png",
             link: "https://github.com/joshiancadiz/prismo",

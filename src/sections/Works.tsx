@@ -27,24 +27,8 @@ const Works = () => {
 
     const projects = [
         {
-            title: "Simple Weather App",
-            description: "A simple weather app built with HTML, CSS, and JavaScript that detects the user's location and displays live weather data. It showcases the core foundations of web development.",
-            tech: ["HTML", "CSS", "JavaScript", "API"],
-            image: "/projects_image/weather-appImg.png",
-            link: "https://github.com/joshiancadiz/weather-app",
-            demoLink: "https://simple-weather-app-nu-ashy.vercel.app"
-        },
-        {
-            title: "Woosh Resto Bar",
-            description: "A modern, frontend-only website for Woosh Resto Bar built with React.js, designed with a mobile-first approach to ensure a smooth and responsive experience across all devices.",
-            tech: ["React.js", "Mobile-First", "Responsive Design"],
-            image: "/projects_image/wooshImg.png",
-            link: "https://github.com/joshiancadiz/woosh-resto-bar",
-            demoLink: "https://woosh-resto-bar.vercel.app"
-        },
-        {
             title: "Prismo AI",
-            description: "Prismo AI is a desktop web application that extracts transcripts from YouTube videos and shorts, then processes them using AI-powered tools. A useful tool for content creators.",
+            description: "Prismo AI is a desktop web application built with Next.js that extracts transcripts from YouTube videos and shorts, then processes them through AI-powered tools including translation, enhancement, and paraphrasing, making it a practical productivity tool for content creators.",
             tech: ["Next.js", "React", "Supabase", "TypeScript", "AI Integration"],
             image: "/projects_image/prismoImg.png",
             link: "https://github.com/joshiancadiz/prismo",
@@ -52,12 +36,36 @@ const Works = () => {
         },
         {
             title: "Capstone: Smart Aquatic Steward",
-            description: "An award-winning IoT system that automates fish tank water quality monitoring, water changes, and feeding schedules using a React Native mobile app.",
+            description: "An award-winning IoT system that monitors fish tank water parameters such as pH levels, water temperature, and turbidity through water sensors, automates water changes and feeding schedules, that can be controlled through a React Native mobile app.",
             tech: ["React Native", "Firebase", "Mobile App", "IoT"],
             image: "/projects_image/logoNobg.png",
             link: "https://github.com/joshiancadiz/SASapp",
             videoDemoLink: "https://drive.google.com/file/d/12zKr33NQyjNtbN5TSAawjdXOJ-vkJa3h/view",
             bgColor: "bg-[#D7EAF9]"
+        },
+        {
+            title: "Woosh Resto Bar",
+            description: "A modern frontend website for Woosh Resto Bar built with React.js, designed with a mobile-first approach to serve as a digital storefront and menu, ensuring a smooth and responsive browsing experience across all devices.",
+            tech: ["React.js", "Mobile-First", "Responsive Design"],
+            image: "/projects_image/wooshImg.png",
+            link: "https://github.com/joshiancadiz/woosh-resto-bar",
+            demoLink: "https://woosh-resto-bar.vercel.app"
+        },
+        {
+            title: "Type Duel",
+            description: "Joined an online hackathon and collaborated with a teammate to ship a playable MVP game using Godot Engine under time constraints, contributing to character sprite design, game user interface design, and core programming logic.",
+            tech: ["Game Dev", "Godot Engine", "Game UI Design", "Pixel Art"],
+            image: "/projects_image/typeduelImg.png",
+            link: "https://github.com/EN-rain/TypeDuel",
+            videoDemoLink: "https://drive.google.com/file/d/1JsYtr6tL8czhQCZYeTpBVmgQTS-LFvSa/view?usp=sharing"
+        },
+        {
+            title: "Simple Weather App",
+            description: "A simple weather app built with HTML, CSS, and JavaScript that detects the user's location and displays live weather data. It showcases the core foundations of web development.",
+            tech: ["HTML", "CSS", "JavaScript", "API"],
+            image: "/projects_image/weather-appImg.png",
+            link: "https://github.com/joshiancadiz/weather-app",
+            demoLink: "https://simple-weather-app-nu-ashy.vercel.app"
         },
     ];
 

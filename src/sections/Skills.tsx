@@ -12,7 +12,7 @@ import {
     ExpressjsIcon,
     NextjsIcon,
     FigmaIcon,
-    CanvaIcon,
+    // CanvaIcon,
     MySQLIcon,
     MongoDBIcon,
     PosgreSQLIcon,
@@ -20,11 +20,11 @@ import {
     SupabaseIcon,
     GitIcon,
     GithubIcon,
-    VercelIcon,
-    RenderIcon,
-    ChatGPTIcon,
-    ClaudeIcon,
-    GeminiIcon,
+    // VercelIcon,
+    // RenderIcon,
+    // ChatGPTIcon,
+    // ClaudeIcon,
+    // GeminiIcon,
     N8NIcon,
     CsharpIcon,
     VSCodeIcon,
@@ -32,9 +32,12 @@ import {
     AntigravityIcon,
     TypescriptIcon,
     TailwindIcon,
-    NotionICon,
-    CplusIcon,
-    PhpIcon
+    // NotionICon,
+    // CplusIcon,
+    // PhpIcon,
+    // GodotIcon,
+    // AsepriteIcon,
+    // ArduinoIDEIcon
 } from '../components/TechIcons';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -79,27 +82,28 @@ const Skills = () => {
         { name: "Supabase", icons: () => <SupabaseIcon /> },
         { name: "Firebase", icons: () => <FirebaseIcon /> },
         { name: "Figma", icons: () => <FigmaIcon /> },
-        { name: "Notion", icons: () => <NotionICon /> },
-        { name: "Vercel", icons: () => <VercelIcon /> },
-        { name: "Render", icons: () => <RenderIcon /> },
+        // { name: "Notion", icons: () => <NotionICon /> },
+        // { name: "Vercel", icons: () => <VercelIcon /> },
+        // { name: "Render", icons: () => <RenderIcon /> },
         { name: "Git", icons: () => <GitIcon /> },
         { name: "Github", icons: () => <GithubIcon /> },
-        { name: "ChatGPT", icons: () => <ChatGPTIcon /> },
-        { name: "Claude", icons: () => <ClaudeIcon /> },
-        { name: "Gemini", icons: () => <GeminiIcon /> },
+        // { name: "ChatGPT", icons: () => <ChatGPTIcon /> },
+        // { name: "Claude", icons: () => <ClaudeIcon /> },
+        // { name: "Gemini", icons: () => <GeminiIcon /> },
         { name: "C#", icons: () => <CsharpIcon /> },
         { name: "Java", icons: () => <JavaIcon /> },
         { name: "React Native", icons: () => <ReactjsIcon /> },
     ];
 
     const familiarSkills = [
+        // { name: "Aseprite", icons: () => <AsepriteIcon /> },
         { name: "Python", icons: () => <PythonIcon /> },
-        { name: "C++", icons: () => <CplusIcon /> },
-        { name: "php", icons: () => <PhpIcon /> },
+        // { name: "C++", icons: () => <CplusIcon /> },
+        // { name: "php", icons: () => <PhpIcon /> },
         { name: "MySQL", icons: () => <MySQLIcon /> },
         { name: "MongoDB", icons: () => <MongoDBIcon /> },
         { name: "PostgreSQL", icons: () => <PosgreSQLIcon /> },
-        { name: "Canva", icons: () => <CanvaIcon /> },
+        // { name: "Canva", icons: () => <CanvaIcon /> },
         { name: "n8n", icons: () => <N8NIcon /> },
     ];
 
@@ -113,7 +117,7 @@ const Skills = () => {
                         [ SKILLS ]
                     </span>
                     <h2 className="font-spline text-3xl md:text-4xl lg:text-[40px] xl:text-[46px] 2xl:text-[50px] font-medium tracking-tight text-white mt-2">
-                        Tools & Technologies
+                        My Tech Stack
                     </h2>
                     <p className="font-spline text-sm md:text-base xl:text-lg font-light text-[#A0A0A0] max-w-[700px] xl:max-w-[800px] mt-1 leading-relaxed">
                         Grouped by how often I actually use them.
@@ -204,6 +208,14 @@ const Skills = () => {
                             <AntigravityIcon />
                             <span className="font-spline text-sm xl:text-base font-light">Antigravity</span>
                         </div>
+                        {/* <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
+                            <GodotIcon />
+                            <span className="font-spline text-sm xl:text-base font-light">Godot Engine</span>
+                        </div>
+                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
+                            <ArduinoIDEIcon />
+                            <span className="font-spline text-sm xl:text-base font-light">Arduino IDE</span>
+                        </div> */}
                     </div>
                 </div>
 

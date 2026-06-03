@@ -32,6 +32,7 @@ import {
     AntigravityIcon,
     TypescriptIcon,
     TailwindIcon,
+    ViteIcon
     // NotionICon,
     // CplusIcon,
     // PhpIcon,
@@ -71,6 +72,7 @@ const Skills = () => {
         { name: "Node.js", icons: () => <NodejsIcon /> },
         { name: "Express.js", icons: () => <ExpressjsIcon /> },
         { name: "Next.js", icons: () => <NextjsIcon /> },
+        { name: "Vite", icons: () => <ViteIcon /> },
         { name: "HTML5", icons: () => <HTML5Icon /> },
         { name: "CSS3", icons: () => <CSS3Icon /> },
         { name: "JavaScript", icons: () => <JavascriptIcon /> },

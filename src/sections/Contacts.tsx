@@ -125,7 +125,7 @@ const Contacts = () => {
 
                         {/* CV Link */}
                         <a
-                            href="/cv portfolio.pdf"
+                            href="/my_cv.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="reveal-contact-item cv-link flex items-center gap-4 xl:gap-5 py-2 w-fit group"

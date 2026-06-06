@@ -96,7 +96,7 @@ const Home = () => {
                     {/* CV Link container */}
                     <div ref={cvLinkRef} className="order-4 md:order-none w-full flex justify-center mt-2 md:mt-4 md:mb-[80px] xl:mt-6 xl:mb-[100px]">
                         <a
-                            href="/cv portfolio.pdf"
+                            href="/my_cv.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="cv-link group font-spline text-[11px] md:text-[12px] xl:text-[13px] font-medium uppercase tracking-[0.2em] text-[#101010] border border-[#101010]/20 hover:border-[#101010]/60 hover:bg-[#101010] hover:text-[#F7F7F7] rounded-full px-6 py-3 md:px-8 md:py-3.5 xl:px-10 xl:py-4 transition-all duration-400 ease-out flex items-center gap-3"

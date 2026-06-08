@@ -100,7 +100,7 @@ const Skills = () => {
     const familiarSkills = [
         // { name: "Aseprite", icons: () => <AsepriteIcon /> },
         { name: "Python", icons: () => <PythonIcon /> },
-        { name: "PHP", icons: () => <PhpIcon /> },
+        { name: "php", icons: () => <PhpIcon /> },
         // { name: "C++", icons: () => <CplusIcon /> },
         // { name: "php", icons: () => <PhpIcon /> },
         { name: "MySQL", icons: () => <MySQLIcon /> },

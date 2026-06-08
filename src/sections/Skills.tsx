@@ -32,10 +32,10 @@ import {
     AntigravityIcon,
     TypescriptIcon,
     TailwindIcon,
-    ViteIcon
+    ViteIcon,
     // NotionICon,
     // CplusIcon,
-    // PhpIcon,
+    PhpIcon,
     // GodotIcon,
     // AsepriteIcon,
     // ArduinoIDEIcon
@@ -100,6 +100,7 @@ const Skills = () => {
     const familiarSkills = [
         // { name: "Aseprite", icons: () => <AsepriteIcon /> },
         { name: "Python", icons: () => <PythonIcon /> },
+        { name: "PHP", icons: () => <PhpIcon /> },
         // { name: "C++", icons: () => <CplusIcon /> },
         // { name: "php", icons: () => <PhpIcon /> },
         { name: "MySQL", icons: () => <MySQLIcon /> },

@@ -55,7 +55,7 @@ const About = () => {
                             <span className="whitespace-nowrap">Joshua Ian Cadiz</span>
                         </p>
                         <a
-                            href="/my_cv.pdf"
+                            href="/cv.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="cv-link group font-spline text-[10px] md:text-[11px] xl:text-[12px] font-medium uppercase tracking-[0.15em] text-[#A0A0A0] border border-white/10 hover:border-white/40 hover:text-white hover:bg-white/5 rounded-full px-4 py-2 md:px-5 md:py-2.5 xl:px-6 xl:py-3 transition-all duration-400 ease-out flex items-center gap-2 w-fit mt-4"

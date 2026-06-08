@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import AboutImage from '../assets/about-me.png';
+import AboutImage from '../assets/about-me.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,6 +48,7 @@ const About = () => {
                                 src={AboutImage}
                                 alt="About Me"
                                 className="w-full h-full object-cover"
+                                loading='lazy'
                             />
                         </div>
                         <p className="font-spline font-light text-[15px] xl:text-[16px] text-[#fff] text-left tracking-wide w-[180px] xl:w-[220px] 2xl:w-[240px]">

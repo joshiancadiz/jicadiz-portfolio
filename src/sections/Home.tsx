@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import heroImg from '../assets/hero.png';
+import heroImg from '../assets/hero.webp';
 
 
 const Home = () => {

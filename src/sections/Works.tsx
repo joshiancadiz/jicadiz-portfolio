@@ -30,7 +30,7 @@ const Works = () => {
             title: "Prismo AI",
             description: "Prismo AI is a desktop web application built with Next.js that extracts transcripts from YouTube videos and shorts, then processes them through AI-powered tools including translation, enhancement, and paraphrasing, making it a practical productivity tool for content creators.",
             tech: ["Next.js", "React", "Supabase", "TypeScript", "AI Integration"],
-            image: "/projects_image/prismoImg.png",
+            image: "/projects_image/prismoImg.webp",
             link: "https://github.com/joshiancadiz/prismo",
             demoLink: "https://prismo-ai.vercel.app/"
         },
@@ -38,7 +38,7 @@ const Works = () => {
             title: "Capstone: Smart Aquatic Steward",
             description: "An award-winning IoT system that monitors fish tank water parameters such as pH levels, water temperature, and turbidity through water sensors, automates water changes and feeding schedules, that can be controlled through a React Native mobile app.",
             tech: ["React Native", "Firebase", "Mobile App", "IoT"],
-            image: "/projects_image/logoNobg.png",
+            image: "/projects_image/logoNobg.webp",
             link: "https://github.com/joshiancadiz/SASapp",
             videoDemoLink: "https://drive.google.com/file/d/12zKr33NQyjNtbN5TSAawjdXOJ-vkJa3h/view",
             bgColor: "bg-[#D7EAF9]"
@@ -47,7 +47,7 @@ const Works = () => {
             title: "Woosh Resto Bar",
             description: "A modern frontend website for Woosh Resto Bar built with React.js, designed with a mobile-first approach to serve as a digital storefront and menu, ensuring a smooth and responsive browsing experience across all devices.",
             tech: ["React.js", "Mobile-First", "Responsive Design"],
-            image: "/projects_image/wooshImg.png",
+            image: "/projects_image/wooshImg.webp",
             link: "https://github.com/joshiancadiz/woosh-resto-bar",
             demoLink: "https://woosh-resto-bar.vercel.app"
         },
@@ -55,7 +55,7 @@ const Works = () => {
             title: "Type Duel",
             description: "Joined an online hackathon and collaborated with a teammate to ship a playable MVP game using Godot Engine under time constraints, contributing to character sprite design, game user interface design, and core programming logic.",
             tech: ["Game Dev", "Godot Engine", "Game UI Design", "Pixel Art"],
-            image: "/projects_image/typeduelImg.png",
+            image: "/projects_image/typeduelImg.webp",
             link: "https://github.com/EN-rain/TypeDuel",
             videoDemoLink: "https://drive.google.com/file/d/1JsYtr6tL8czhQCZYeTpBVmgQTS-LFvSa/view?usp=sharing"
         },
@@ -63,7 +63,7 @@ const Works = () => {
             title: "Simple Weather App",
             description: "A simple weather app built with HTML, CSS, and JavaScript that detects the user's location and displays live weather data. It showcases the core foundations of web development.",
             tech: ["HTML", "CSS", "JavaScript", "API"],
-            image: "/projects_image/weather-appImg.png",
+            image: "/projects_image/weather-appImg.webp",
             link: "https://github.com/joshiancadiz/weather-app",
             demoLink: "https://simple-weather-app-nu-ashy.vercel.app"
         },
@@ -99,6 +99,7 @@ const Works = () => {
                                     src={project.image}
                                     alt={project.title}
                                     className={`w-full h-full ${project.bgColor ? 'object-contain p-2' : 'object-cover'} group-hover:scale-[1.03] transition-transform duration-500`}
+                                    loading='lazy'
                                 />
                             </div>
 

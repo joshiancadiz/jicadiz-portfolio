@@ -129,7 +129,7 @@ const About = () => {
                                 Full-Stack Engineer Intern
                             </h3>
                             <p className="font-spline text-xs md:text-sm xl:text-base text-[#A0A0A0] tracking-wide">
-                                at VIP Scale · 2025-2026
+                                at VIP Scale · Dec 2025 - Apr 2026
                             </p>
                         </div>
                         <div className="reveal-item flex flex-col gap-4 font-spline text-sm md:text-[15px] xl:text-[16px] 2xl:text-[17px] font-light text-[#A0A0A0] leading-relaxed max-w-[650px] xl:max-w-[750px] 2xl:max-w-[850px]">

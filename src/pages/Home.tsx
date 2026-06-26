@@ -1,14 +1,15 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import heroImg from '../assets/hero.webp';
+import ArrowIcon from '../components/ui/ArrowIcon';
 
+const titleWords = ["FRONT-END", "ENGINEER"];
 
 const Home = () => {
     const titleRef = useRef<HTMLHeadingElement>(null);
     const subtitleRef = useRef<HTMLParagraphElement>(null);
     const imageRef = useRef<HTMLImageElement>(null);
     const cvLinkRef = useRef<HTMLDivElement>(null);
-    const titleWords = ["FRONT-END", "ENGINEER"];
 
     useEffect(() => {
         if (!titleRef.current) return;
@@ -86,8 +87,11 @@ const Home = () => {
                         <div className="overflow-hidden">
                             <img
                                 ref={imageRef}
+                                width={1126}
+                                height={868}
                                 src={heroImg}
-                                alt="Hero"
+                                fetchPriority='high'
+                                alt="Joshua Ian Cadiz — Front-End Engineer"
                                 className="w-[300px] md:w-[500px] xl:w-[580px] 2xl:w-[640px] object-contain"
                             />
                         </div>
@@ -101,9 +105,7 @@ const Home = () => {
                             rel="noopener noreferrer"
                             className="cv-link group font-spline text-[11px] md:text-[12px] xl:text-[13px] font-medium uppercase tracking-[0.2em] text-[#101010] border border-[#101010]/20 hover:border-[#101010]/60 hover:bg-[#101010] hover:text-[#F7F7F7] rounded-full px-6 py-3 md:px-8 md:py-3.5 xl:px-10 xl:py-4 transition-all duration-400 ease-out flex items-center gap-3"
                         >
-                            <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
+                            <ArrowIcon className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" />
                             View my CV
                         </a>
                     </div>

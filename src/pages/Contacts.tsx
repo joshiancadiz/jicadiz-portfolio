@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import ArrowIcon from '../components/ui/ArrowIcon';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -131,9 +132,7 @@ const Contacts = () => {
                             className="reveal-contact-item cv-link flex items-center gap-4 xl:gap-5 py-2 w-fit group"
                         >
                             <div className="w-8 h-8 xl:w-10 xl:h-10 flex-shrink-0 flex items-center justify-center">
-                                <svg className="w-5 h-5 xl:w-6 xl:h-6 text-[#F7F7F7] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
+                                <ArrowIcon className="w-5 h-5 xl:w-6 xl:h-6 text-[#F7F7F7] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                             </div>
                             <div className="flex flex-col">
                                 <span className="font-spline text-[10px] xl:text-xs uppercase tracking-[0.1em] font-medium" style={{ color: '#F7F7F7' }}>RESUME</span>

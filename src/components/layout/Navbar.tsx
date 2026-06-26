@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { getPhilippinesTime } from '../utils/time';
+import { getPhilippinesTime } from '../../utils/time';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 

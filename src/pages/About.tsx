@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AboutImage from '../assets/about-me.webp';
+import ArrowIcon from '../components/ui/ArrowIcon';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +47,9 @@ const About = () => {
                         <div className="w-[180px] h-[240px] xl:w-[220px] xl:h-[290px] 2xl:w-[240px] 2xl:h-[320px] border border-white/10 flex items-center justify-center bg-white/[0.02] overflow-hidden">
                             <img
                                 src={AboutImage}
-                                alt="About Me"
+                                width={494}
+                                height={673}
+                                alt="Portrait of Joshua Ian Cadiz"
                                 className="w-full h-full object-cover"
                                 loading='lazy'
                             />
@@ -61,9 +64,7 @@ const About = () => {
                             rel="noopener noreferrer"
                             className="cv-link group font-spline text-[10px] md:text-[11px] xl:text-[12px] font-medium uppercase tracking-[0.15em] text-[#A0A0A0] border border-white/10 hover:border-white/40 hover:text-white hover:bg-white/5 rounded-full px-4 py-2 md:px-5 md:py-2.5 xl:px-6 xl:py-3 transition-all duration-400 ease-out flex items-center gap-2 w-fit mt-4"
                         >
-                            <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
+                            <ArrowIcon className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
                             View my CV
                         </a>
                     </div>
@@ -110,9 +111,7 @@ const About = () => {
                     {/* Left side: Label aligned with image */}
                     <div className="reveal-item flex flex-col gap-1 w-[180px] xl:w-[220px] 2xl:w-[240px] shrink-0">
                         <div className="flex items-center gap-2">
-                            <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
+                            <ArrowIcon className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
                             <span className="font-spline text-sm md:text-[15px] xl:text-[17px] font-medium text-white tracking-wide">
                                 My Experience
                             </span>

@@ -2,6 +2,50 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+const projects = [
+    {
+        title: "Prismo AI",
+        description: "Prismo AI is a desktop web application built with Next.js that extracts transcripts from YouTube videos and shorts, then processes them through AI-powered tools including translation, enhancement, and paraphrasing, making it a practical productivity tool for content creators.",
+        tech: ["Next.js", "React", "Supabase", "TypeScript", "AI Integration"],
+        image: "/projects_image/prismoImg.webp",
+        link: "https://github.com/joshiancadiz/prismo",
+        demoLink: "https://prismo-ai.vercel.app/",
+    },
+    {
+        title: "Capstone: Smart Aquatic Steward",
+        description: "An award-winning IoT system that monitors fish tank water parameters such as pH levels, water temperature, and turbidity through water sensors, automates water changes and feeding schedules, that can be controlled through a React Native mobile app.",
+        tech: ["React Native", "Firebase", "Mobile App", "IoT"],
+        image: "/projects_image/logoNobg.webp",
+        link: "https://github.com/joshiancadiz/SASapp",
+        videoDemoLink: "https://drive.google.com/file/d/12zKr33NQyjNtbN5TSAawjdXOJ-vkJa3h/view",
+        bgColor: "bg-[#D7EAF9]"
+    },
+    {
+        title: "Woosh Resto Bar",
+        description: "A modern frontend website for Woosh Resto Bar built with React.js, designed with a mobile-first approach to serve as a digital storefront and menu, ensuring a smooth and responsive browsing experience across all devices.",
+        tech: ["React.js", "Mobile-First", "Responsive Design"],
+        image: "/projects_image/wooshImg.webp",
+        link: "https://github.com/joshiancadiz/woosh-resto-bar",
+        demoLink: "https://woosh-resto-bar.vercel.app"
+    },
+    {
+        title: "Type Duel",
+        description: "Joined an online hackathon and collaborated with a teammate to ship a playable MVP game using Godot Engine under time constraints, contributing to character sprite design, game user interface design, and core programming logic.",
+        tech: ["Game Dev", "Godot Engine", "Game UI Design", "Pixel Art"],
+        image: "/projects_image/typeduelImg.webp",
+        link: "https://github.com/EN-rain/TypeDuel",
+        videoDemoLink: "https://drive.google.com/file/d/1JsYtr6tL8czhQCZYeTpBVmgQTS-LFvSa/view?usp=sharing"
+    },
+    {
+        title: "Simple Weather App",
+        description: "A simple weather app built with HTML, CSS, and JavaScript that detects the user's location and displays live weather data. It showcases the core foundations of web development.",
+        tech: ["HTML", "CSS", "JavaScript", "API"],
+        image: "/projects_image/weather-appImg.webp",
+        link: "https://github.com/joshiancadiz/weather-app",
+        demoLink: "https://simple-weather-app-nu-ashy.vercel.app"
+    },
+];
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Works = () => {
@@ -25,50 +69,6 @@ const Works = () => {
         return () => ctx.revert();
     }, []);
 
-    const projects = [
-        {
-            title: "Prismo AI",
-            description: "Prismo AI is a desktop web application built with Next.js that extracts transcripts from YouTube videos and shorts, then processes them through AI-powered tools including translation, enhancement, and paraphrasing, making it a practical productivity tool for content creators.",
-            tech: ["Next.js", "React", "Supabase", "TypeScript", "AI Integration"],
-            image: "/projects_image/prismoImg.webp",
-            link: "https://github.com/joshiancadiz/prismo",
-            demoLink: "https://prismo-ai.vercel.app/"
-        },
-        {
-            title: "Capstone: Smart Aquatic Steward",
-            description: "An award-winning IoT system that monitors fish tank water parameters such as pH levels, water temperature, and turbidity through water sensors, automates water changes and feeding schedules, that can be controlled through a React Native mobile app.",
-            tech: ["React Native", "Firebase", "Mobile App", "IoT"],
-            image: "/projects_image/logoNobg.webp",
-            link: "https://github.com/joshiancadiz/SASapp",
-            videoDemoLink: "https://drive.google.com/file/d/12zKr33NQyjNtbN5TSAawjdXOJ-vkJa3h/view",
-            bgColor: "bg-[#D7EAF9]"
-        },
-        {
-            title: "Woosh Resto Bar",
-            description: "A modern frontend website for Woosh Resto Bar built with React.js, designed with a mobile-first approach to serve as a digital storefront and menu, ensuring a smooth and responsive browsing experience across all devices.",
-            tech: ["React.js", "Mobile-First", "Responsive Design"],
-            image: "/projects_image/wooshImg.webp",
-            link: "https://github.com/joshiancadiz/woosh-resto-bar",
-            demoLink: "https://woosh-resto-bar.vercel.app"
-        },
-        {
-            title: "Type Duel",
-            description: "Joined an online hackathon and collaborated with a teammate to ship a playable MVP game using Godot Engine under time constraints, contributing to character sprite design, game user interface design, and core programming logic.",
-            tech: ["Game Dev", "Godot Engine", "Game UI Design", "Pixel Art"],
-            image: "/projects_image/typeduelImg.webp",
-            link: "https://github.com/EN-rain/TypeDuel",
-            videoDemoLink: "https://drive.google.com/file/d/1JsYtr6tL8czhQCZYeTpBVmgQTS-LFvSa/view?usp=sharing"
-        },
-        {
-            title: "Simple Weather App",
-            description: "A simple weather app built with HTML, CSS, and JavaScript that detects the user's location and displays live weather data. It showcases the core foundations of web development.",
-            tech: ["HTML", "CSS", "JavaScript", "API"],
-            image: "/projects_image/weather-appImg.webp",
-            link: "https://github.com/joshiancadiz/weather-app",
-            demoLink: "https://simple-weather-app-nu-ashy.vercel.app"
-        },
-    ];
-
     return (
         <section ref={sectionRef} id="works" className="bg-[#F7F7F7] text-[#101010] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32 xl:py-40">
             <div className="max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full px-6 md:px-12 xl:px-16 2xl:px-20 flex flex-col items-start relative z-[2]">
@@ -89,7 +89,7 @@ const Works = () => {
                 {/* Projects Grid */}
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 xl:gap-10 mt-4">
                     {projects.map((project, index) => (
-                        <div
+                        <article
                             key={index}
                             className="reveal-work-item flex flex-col bg-white border border-black/5 rounded-sm overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_12px_35px_rgba(0,0,0,0.07)] hover:-translate-y-1 transition-all duration-300 group"
                         >
@@ -100,6 +100,7 @@ const Works = () => {
                                     alt={project.title}
                                     className={`w-full h-full ${project.bgColor ? 'object-contain p-2' : 'object-cover'} group-hover:scale-[1.03] transition-transform duration-500`}
                                     loading='lazy'
+                                    decoding='async'
                                 />
                             </div>
 
@@ -154,7 +155,7 @@ const Works = () => {
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     ))}
                 </div>
 

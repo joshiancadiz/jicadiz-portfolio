@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
-import { getPhilippinesTime } from '../../utils/time';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import DigitalClock from '../ui/DigitalClock';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,16 +14,12 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-    const [currentTime, setCurrentTime] = useState(getPhilippinesTime());
     const [menuOpen, setMenuOpen] = useState(false);
     const navRef = useRef<HTMLElement>(null);
     const overlayRef = useRef<HTMLDivElement>(null);
     const linksRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentTime(getPhilippinesTime());
-        }, 1000);
 
         const ctx = gsap.context(() => {
             gsap.set(navRef.current, { color: '#ffffff' });
@@ -42,7 +38,6 @@ const Navbar = () => {
         }, navRef);
 
         return () => {
-            clearInterval(timer);
             ctx.revert();
         };
     }, []);
@@ -92,14 +87,16 @@ const Navbar = () => {
         <>
             <nav
                 ref={navRef}
+                role="navigation"
+                aria-label="Main navigation"
                 className="fixed top-0 left-0 w-full z-50 text-white mix-blend-difference opacity-0 navbar"
             >
                 <div className="flex items-center justify-between h-20 px-[32px] xl:px-[64px] xl:h-24">
                     <div className="flex-shrink-0">
                         <a href="/" className="flex items-center">
-                            <h1 className="text-2xl xl:text-3xl font-bold tracking-[-1px] font-sofia">
+                            <p className="text-2xl xl:text-3xl font-bold tracking-[-1px] font-sofia">
                                 JI CADIZ
-                            </h1>
+                            </p>
                         </a>
                     </div>
 
@@ -119,7 +116,7 @@ const Navbar = () => {
                     {/* Desktop Time */}
                     <div className="hidden md:block flex-shrink-0">
                         <div className="text-sm xl:text-base font-medium uppercase font-spline">
-                            [ {currentTime} ]
+                            [ <DigitalClock /> ]
                         </div>
                     </div>
 
@@ -144,6 +141,7 @@ const Navbar = () => {
                     background: 'rgba(10, 10, 10, 0.85)',
                     backdropFilter: 'blur(24px)',
                     WebkitBackdropFilter: 'blur(24px)',
+                    willChange: 'transform',
                 }}
             >
                 {/* Close Button */}
@@ -184,7 +182,7 @@ const Navbar = () => {
 
                     {/* Time display on mobile overlay */}
                     <div className="mt-8 text-xs font-medium uppercase font-spline text-white/40 tracking-[0.15em]">
-                        [ {currentTime} ]
+                        [ <DigitalClock /> ]
                     </div>
                 </div>
             </div>

@@ -136,7 +136,7 @@ const Skills = () => {
                         <span className="font-spline text-xs xl:text-sm tracking-[0.15em] text-[#A0A0A0] font-light">
                             CORE — USED DAILY
                         </span>
-                        <SkillList skills={coreSkills} />
+                        <SkillList skills={coreSkills} variant='core' />
                     </div>
 
                     {/* Category 2: STRONG */}
@@ -144,7 +144,7 @@ const Skills = () => {
                         <span className="font-spline text-xs xl:text-sm tracking-[0.15em] text-[#A0A0A0] font-light">
                             STRONG — USED REGULARLY
                         </span>
-                        <SkillList skills={strongSkills} />
+                        <SkillList skills={strongSkills} variant='strong' />
                     </div>
 
                     {/* Category 3: FAMILIAR */}
@@ -152,7 +152,7 @@ const Skills = () => {
                         <span className="font-spline text-xs xl:text-sm tracking-[0.15em] text-[#A0A0A0] font-light">
                             FAMILIAR — USED WHEN NEEDED
                         </span>
-                        <SkillList skills={familiarSkills} />
+                        <SkillList skills={familiarSkills} variant='familiar' />
                     </div>
 
                 </div>

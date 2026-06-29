@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-roboto-mono: "Roboto Mono", monospace;
+  /* --font-roboto-mono: "Roboto Mono", monospace; */
   --font-sofia: "Sofia Sans Condensed", sans-serif;
   --font-spline: "Spline Sans Mono", monospace;
 }

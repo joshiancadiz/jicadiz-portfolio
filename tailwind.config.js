@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        mono: ['"Roboto Mono"', 'monospace'],
+        // mono: ['"Roboto Mono"', 'monospace'],
         sofia: ['"Sofia Sans Condensed"', 'sans-serif'],
         spline: ['"Spline Sans Mono"', 'monospace'],
       },

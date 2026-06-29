@@ -15,45 +15,43 @@ const Home = () => {
         if (!titleRef.current) return;
 
         const charSpans = titleRef.current.querySelectorAll('.char');
+        const isMobile = window.innerWidth < 768;
 
-        const animate = () => {
-            const tl = gsap.timeline();
-            const isMobile = window.innerWidth < 768;
+        // Set initial states
+        if (!isMobile) gsap.set(charSpans, { yPercent: -100 })
+        gsap.set([imageRef.current, subtitleRef.current, cvLinkRef.current].filter(Boolean), {
+            yPercent: -100,
+            autoAlpha: 0,
+        })
+        gsap.set(".navbar", { autoAlpha: 0, y: -20 })
 
-            if (!isMobile) {
-                tl.from(charSpans, {
-                    yPercent: -100,
-                    duration: 1,
-                    stagger: {
-                        amount: 1,
-                        from: "center"
-                    },
-                    ease: "power4.out",
-                });
-            }
+        // Animate directly — page is already hidden until ready
+        const tl = gsap.timeline()
+        const isMobileAnim = window.innerWidth < 768
 
-            tl.from([imageRef.current, subtitleRef.current, cvLinkRef.current].filter(Boolean), {
-                yPercent: -100,
-                autoAlpha: 0,
-                duration: 1.2,
-                stagger: 0.1,
-                ease: "power3.out",
-            }, isMobile ? 0 : "-=0.5") // Start slightly before text finishes for smoothness
-                .to(".navbar", {
-                    autoAlpha: 1,
-                    y: 0,
-                    duration: 0.8,
-                    ease: "power2.out",
-                });
-        };
-
-        if (document.readyState === 'complete') {
-            animate();
-        } else {
-            window.addEventListener('load', animate);
-            return () => window.removeEventListener('load', animate);
+        if (!isMobileAnim) {
+            tl.to(charSpans, {
+                yPercent: 0,
+                duration: 1,
+                stagger: { amount: 1, from: "center" },
+                ease: "power4.out",
+            })
         }
-    }, []);
+
+        tl.to([imageRef.current, subtitleRef.current, cvLinkRef.current].filter(Boolean), {
+            yPercent: 0,
+            autoAlpha: 1,
+            duration: 1.2,
+            stagger: 0.1,
+            ease: "power3.out",
+        }, isMobileAnim ? 0 : "-=0.5")
+            .to(".navbar", {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.8,
+                ease: "power2.out",
+            })
+    }, [])
 
     return (
         <section id="home" className="text-[#101010] mt-[80px] pt-[50px] flex flex-col items-center justify-start md:justify-center min-h-[calc(100vh-80px)] w-full">

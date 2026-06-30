@@ -1,6 +1,4 @@
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 import SkillList from '../components/ui/SkillList';
 import {
     HTML5Icon,
@@ -85,35 +83,11 @@ const familiarSkills = [
     { name: "n8n", icons: () => <N8NIcon /> },
 ];
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Skills = () => {
-    const sectionRef = useRef<HTMLElement>(null);
-    const contentRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const ctx = gsap.context(() => {
-            gsap.from(".reveal-item", {
-                y: 40,
-                opacity: 0,
-                stagger: 0.1,
-                duration: 1,
-                ease: "power3.out",
-                force3D: true,
-                scrollTrigger: {
-                    trigger: sectionRef.current,
-                    start: "top 50%",
-                    toggleActions: "play none none reverse"
-                }
-            });
-        }, sectionRef);
-
-        return () => ctx.revert();
-    }, []);
 
     return (
-        <section ref={sectionRef} id="skills" className="bg-[#101010] text-[#F7F7F7] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32 xl:py-40" style={{ contain: 'layout style paint' }}>
-            <div ref={contentRef} className="max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full px-6 md:px-12 xl:px-16 2xl:px-20 flex flex-col items-start relative z-[2]">
+        <section id="skills" className="bg-[#101010] text-[#F7F7F7] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32 xl:py-40" style={{ contain: 'layout style paint' }}>
+            <div className="max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full px-6 md:px-12 xl:px-16 2xl:px-20 flex flex-col items-start relative z-[2]">
 
                 {/* Header */}
                 <div className="reveal-item flex flex-col gap-2 mb-6 md:mb-10 xl:mb-14">

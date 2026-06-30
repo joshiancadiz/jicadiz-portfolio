@@ -1,36 +1,10 @@
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AboutImage from '../assets/about-me.webp';
 import ArrowIcon from '../components/ui/ArrowIcon';
 
-gsap.registerPlugin(ScrollTrigger);
-
 const About = () => {
-    const sectionRef = useRef<HTMLElement>(null);
-    const contentRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const ctx = gsap.context(() => {
-            gsap.from(".reveal-item", {
-                y: 40,
-                opacity: 0,
-                stagger: 0.15,
-                duration: 1.8,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: sectionRef.current,
-                    start: "top 50%",
-                    toggleActions: "play none none reverse"
-                }
-            });
-        }, sectionRef);
-
-        return () => ctx.revert();
-    }, []);
 
     return (
-        <section ref={sectionRef} id="about" className="bg-[#101010] text-[#F7F7F7] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32 xl:py-40">
+        <section id="about" className="bg-[#101010] text-[#F7F7F7] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32 xl:py-40">
             <div className="max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full px-6 md:px-12 xl:px-16 2xl:px-20 flex flex-col items-start relative z-[2]">
 
                 {/* Top Label */}
@@ -40,7 +14,7 @@ const About = () => {
                     </span>
                 </div>
 
-                <div ref={contentRef} className="w-full flex flex-col md:flex-row gap-12 md:gap-20 xl:gap-28 items-start">
+                <div className="w-full flex flex-col md:flex-row gap-12 md:gap-20 xl:gap-28 items-start">
 
                     {/* Left side: Avatar Card & Name */}
                     <div className="reveal-item flex flex-col items-start gap-3">

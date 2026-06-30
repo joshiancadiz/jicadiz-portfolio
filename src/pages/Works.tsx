@@ -1,6 +1,4 @@
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 const projects = [
     {
@@ -46,31 +44,10 @@ const projects = [
     },
 ];
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Works = () => {
-    const sectionRef = useRef<HTMLElement>(null);
-
-    useEffect(() => {
-        const ctx = gsap.context(() => {
-            gsap.from(".reveal-work-item", {
-                y: 30,
-                opacity: 0,
-                duration: 0.6,
-                ease: "power2.out",
-                scrollTrigger: {
-                    trigger: ".reveal-work-item",
-                    start: "top 85%",
-                    toggleActions: "play none none reverse"
-                }
-            });
-        }, sectionRef);
-
-        return () => ctx.revert();
-    }, []);
 
     return (
-        <section ref={sectionRef} id="works" className="bg-[#F7F7F7] text-[#101010] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32 xl:py-40">
+        <section id="works" className="bg-[#F7F7F7] text-[#101010] flex flex-col items-center justify-center min-h-screen w-full overflow-hidden relative py-20 md:py-32 xl:py-40">
             <div className="max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full px-6 md:px-12 xl:px-16 2xl:px-20 flex flex-col items-start relative z-[2]">
 
                 {/* Top Label */}

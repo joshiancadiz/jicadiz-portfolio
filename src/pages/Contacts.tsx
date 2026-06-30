@@ -1,15 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useState } from 'react';
 import ArrowIcon from '../components/ui/ArrowIcon';
 import GmailIcon from '../components/ui/GmailIcon';
 import LinkedInIcon from '../components/ui/LinkedInIcon';
 import GithubIcon from '../components/ui/GithubIcon';
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Contacts = () => {
-    const sectionRef = useRef<HTMLElement>(null);
     const [copied, setCopied] = useState(false);
 
     const handleCopyEmail = (e: React.MouseEvent) => {
@@ -20,28 +15,8 @@ const Contacts = () => {
         });
     };
 
-    useEffect(() => {
-        const ctx = gsap.context(() => {
-            gsap.from(".reveal-contact-item", {
-                y: 30,
-                opacity: 0,
-                duration: 0.6,
-                stagger: 0.1,
-                ease: "power2.out",
-                scrollTrigger: {
-                    trigger: sectionRef.current,
-                    start: "top 90%",
-                    toggleActions: "play none none reverse"
-                }
-            });
-        }, sectionRef);
-
-        return () => ctx.revert();
-    }, []);
-
     return (
         <section
-            ref={sectionRef}
             id="contacts"
             className="bg-[#101010] text-[#F7F7F7] flex flex-col items-center w-full overflow-hidden relative py-20 md:py-32 xl:py-40"
         >

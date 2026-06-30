@@ -50,7 +50,7 @@ const coreSkills = [
     { name: "CSS3", icons: () => <CSS3Icon /> },
     { name: "JavaScript", icons: () => <JavascriptIcon /> },
     { name: "TypeScript", icons: () => <TypescriptIcon /> },
-    { name: "React.js", icons: () => <ReactjsIcon /> },
+    { name: "React", icons: () => <ReactjsIcon /> },
 ];
 
 const strongSkills = [

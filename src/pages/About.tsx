@@ -56,10 +56,7 @@ const About = () => {
 
                         <div className="reveal-item flex flex-col gap-4 font-spline text-sm md:text-[15px] xl:text-[16px] 2xl:text-[17px] font-light text-[#A0A0A0] leading-relaxed max-w-[650px] xl:max-w-[750px] 2xl:max-w-[850px]">
                             <p>
-                                I'm a Software Engineer specialized in <span className="text-white font-medium">Front-End Development</span>, turning complex workflows into simple, intuitive web experiences.
-                            </p>
-                            <p>
-                                I've built and maintained client websites and developed full-stack tools that streamline real workflows, always focused on reducing friction for the end user.
+                                I'm a Junior Software Engineer specialized in <span className="text-white font-medium">Front-End Development</span> using <span className="text-white font-medium">React</span> and <span className="text-white font-medium">Next.js</span>. I've built and maintained client websites and developed full-stack tools that streamline real workflows, to reduce friction for the end user.
                             </p>
                         </div>
 

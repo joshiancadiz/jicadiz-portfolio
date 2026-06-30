@@ -107,7 +107,7 @@ const About = () => {
                                 Built and maintained websites for international clients using Kajabi and GoHighLevel, leveraging AI tools such as Gemini and Claude to generate tailored content and images that supported their marketing campaigns and business goals.
                             </p>
                             <p>
-                                Developed full-stack applications using React.js and integrating with automation tools such as n8n to connect APIs and services to automate content generation workflows, driving significant improvements in business efficiency.
+                                Developed full-stack applications using React/Next.js and integrating with automation tools such as n8n to connect APIs and services to automate content generation workflows, driving significant improvements in business efficiency.
                             </p>
                         </div>
                     </div>

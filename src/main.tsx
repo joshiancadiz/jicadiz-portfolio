@@ -9,6 +9,18 @@ import '@fontsource/spline-sans-mono/400.css'
 import '@fontsource/spline-sans-mono/500.css'
 import '@fontsource/spline-sans-mono/700.css'
 
+const revealPage = () => {
+  document.body.style.visibility = 'visible'
+}
+
+Promise.all([
+  document.fonts.ready,
+  new Promise(resolve => {
+    if (document.readyState === 'complete') resolve(null)
+    else window.addEventListener('load', resolve, { once: true })
+  })
+]).then(revealPage)
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />

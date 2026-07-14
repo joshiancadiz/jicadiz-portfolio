@@ -35,7 +35,7 @@ const Home = () => {
         if (isMobile) {
             tl.to(titleRef.current, {
                 autoAlpha: 1,
-                duration: 2,
+                duration: 1.5,
                 ease: "power3.out",
             })
         } else {

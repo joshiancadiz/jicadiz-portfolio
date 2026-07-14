@@ -35,7 +35,7 @@ const Home = () => {
         if (isMobile) {
             tl.to(titleRef.current, {
                 autoAlpha: 1,
-                duration: 1.5,
+                duration: 3.5,
                 ease: "power3.out",
             })
         } else {
@@ -53,7 +53,7 @@ const Home = () => {
             duration: 1.2,
             stagger: 0.1,
             ease: "power3.out",
-        }, isMobile ? 0 : "-=0.5")
+        }, isMobile ? ">" : "-=0.5")
             .to(".navbar", {
                 autoAlpha: 1,
                 y: 0,

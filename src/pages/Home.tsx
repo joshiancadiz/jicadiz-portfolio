@@ -18,7 +18,11 @@ const Home = () => {
         const isMobile = window.innerWidth < 768;
 
         // Set initial states
-        if (!isMobile) gsap.set(charSpans, { yPercent: -100 })
+        if (isMobile) {
+            gsap.set(titleRef.current, { autoAlpha: 0 })
+        } else {
+            gsap.set(charSpans, { yPercent: -100 })
+        }
         gsap.set([imageRef.current, subtitleRef.current, cvLinkRef.current].filter(Boolean), {
             yPercent: -100,
             autoAlpha: 0,
@@ -27,9 +31,14 @@ const Home = () => {
 
         // Animate directly — page is already hidden until ready
         const tl = gsap.timeline()
-        const isMobileAnim = window.innerWidth < 768
 
-        if (!isMobileAnim) {
+        if (isMobile) {
+            tl.to(titleRef.current, {
+                autoAlpha: 1,
+                duration: 1.2,
+                ease: "power2.out",
+            })
+        } else {
             tl.to(charSpans, {
                 yPercent: 0,
                 duration: 1,
@@ -44,7 +53,7 @@ const Home = () => {
             duration: 1.2,
             stagger: 0.1,
             ease: "power3.out",
-        }, isMobileAnim ? 0 : "-=0.5")
+        }, isMobile ? 0 : "-=0.5")
             .to(".navbar", {
                 autoAlpha: 1,
                 y: 0,

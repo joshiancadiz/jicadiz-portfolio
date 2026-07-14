@@ -35,8 +35,8 @@ const Home = () => {
         if (isMobile) {
             tl.to(titleRef.current, {
                 autoAlpha: 1,
-                duration: 1.2,
-                ease: "power2.out",
+                duration: 2,
+                ease: "power3.out",
             })
         } else {
             tl.to(charSpans, {

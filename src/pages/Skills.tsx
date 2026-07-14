@@ -19,8 +19,8 @@ import {
     SupabaseIcon,
     GitIcon,
     GithubIcon,
-    // VercelIcon,
-    // RenderIcon,
+    VercelIcon,
+    RenderIcon,
     // ChatGPTIcon,
     // ClaudeIcon,
     // GeminiIcon,
@@ -32,55 +32,59 @@ import {
     TypescriptIcon,
     TailwindIcon,
     ViteIcon,
+    PostmanIcon,
+    ExpoIcon
     // NotionICon,
     // CplusIcon,
-    PhpIcon,
     // GodotIcon,
     // AsepriteIcon,
     // ArduinoIDEIcon
 } from '../components/ui/TechIcons';
 
-const coreSkills = [
+const frontEndSkills = [
+    { name: "React", icons: () => <ReactjsIcon /> },
     { name: "Tailwind CSS", icons: () => <TailwindIcon /> },
-    { name: "Node.js", icons: () => <NodejsIcon /> },
-    { name: "Express.js", icons: () => <ExpressjsIcon /> },
+    { name: "Figma", icons: () => <FigmaIcon /> },
     { name: "Next.js", icons: () => <NextjsIcon /> },
     { name: "Vite", icons: () => <ViteIcon /> },
     { name: "HTML5", icons: () => <HTML5Icon /> },
     { name: "CSS3", icons: () => <CSS3Icon /> },
     { name: "JavaScript", icons: () => <JavascriptIcon /> },
     { name: "TypeScript", icons: () => <TypescriptIcon /> },
-    { name: "React", icons: () => <ReactjsIcon /> },
-];
-
-const strongSkills = [
-    { name: "Supabase", icons: () => <SupabaseIcon /> },
-    { name: "Firebase", icons: () => <FirebaseIcon /> },
-    { name: "Figma", icons: () => <FigmaIcon /> },
-    // { name: "Notion", icons: () => <NotionICon /> },
-    // { name: "Vercel", icons: () => <VercelIcon /> },
-    // { name: "Render", icons: () => <RenderIcon /> },
-    { name: "Git", icons: () => <GitIcon /> },
-    { name: "Github", icons: () => <GithubIcon /> },
-    // { name: "ChatGPT", icons: () => <ChatGPTIcon /> },
-    // { name: "Claude", icons: () => <ClaudeIcon /> },
-    // { name: "Gemini", icons: () => <GeminiIcon /> },
-    { name: "C#", icons: () => <CsharpIcon /> },
-    { name: "Java", icons: () => <JavaIcon /> },
     { name: "React Native", icons: () => <ReactjsIcon /> },
 ];
 
-const familiarSkills = [
-    // { name: "Aseprite", icons: () => <AsepriteIcon /> },
+const backEndSkills = [
+    { name: "Node.js", icons: () => <NodejsIcon /> },
+    { name: "Express.js", icons: () => <ExpressjsIcon /> },
+    { name: "C#", icons: () => <CsharpIcon /> },
+    { name: "Java", icons: () => <JavaIcon /> },
     { name: "Python", icons: () => <PythonIcon /> },
-    { name: "php", icons: () => <PhpIcon /> },
-    // { name: "C++", icons: () => <CplusIcon /> },
-    // { name: "php", icons: () => <PhpIcon /> },
+    { name: "Supabase", icons: () => <SupabaseIcon /> },
+    { name: "Firebase", icons: () => <FirebaseIcon /> },
     { name: "MySQL", icons: () => <MySQLIcon /> },
     { name: "MongoDB", icons: () => <MongoDBIcon /> },
     { name: "PostgreSQL", icons: () => <PosgreSQLIcon /> },
-    // { name: "Canva", icons: () => <CanvaIcon /> },
+    // { name: "Notion", icons: () => <NotionICon /> },
+    // { name: "ChatGPT", icons: () => <ChatGPTIcon /> },
+    // { name: "Claude", icons: () => <ClaudeIcon /> },
+    // { name: "Gemini", icons: () => <GeminiIcon /> },
+];
+
+const developmentToolsSkills = [
+    { name: "Antigravity", icons: () => <AntigravityIcon /> },
+    { name: "Cursor", icons: () => <CursorIcon /> },
+    { name: "VSCode", icons: () => <VSCodeIcon /> },
     { name: "n8n", icons: () => <N8NIcon /> },
+    { name: "Git", icons: () => <GitIcon /> },
+    { name: "Github", icons: () => <GithubIcon /> },
+    { name: "Postman", icons: () => <PostmanIcon /> },
+];
+
+const deploymentSkills = [
+    { name: "Vercel", icons: () => <VercelIcon /> },
+    { name: "Render", icons: () => <RenderIcon /> },
+    { name: "Expo", icons: () => <ExpoIcon /> }
 ];
 
 const Skills = () => {
@@ -105,75 +109,38 @@ const Skills = () => {
                 {/* Categories */}
                 <div className="w-full flex flex-col gap-10 md:gap-12 xl:gap-14">
 
-                    {/* Category 1: CORE */}
+                    {/* Category 1: FRONT-END */}
                     <div className="reveal-item flex flex-col gap-3 xl:gap-4">
                         <span className="font-spline text-xs xl:text-sm tracking-[0.15em] text-[#A0A0A0] font-light">
-                            CORE — USED DAILY
+                            FRONT-END
                         </span>
-                        <SkillList skills={coreSkills} variant='core' />
+                        <SkillList skills={frontEndSkills} />
                     </div>
 
-                    {/* Category 2: STRONG */}
+                    {/* Category 2: BACK-END */}
                     <div className="reveal-item flex flex-col gap-3 xl:gap-4">
                         <span className="font-spline text-xs xl:text-sm tracking-[0.15em] text-[#A0A0A0] font-light">
-                            STRONG — USED REGULARLY
+                            BACK-END
                         </span>
-                        <SkillList skills={strongSkills} variant='strong' />
+                        <SkillList skills={backEndSkills} />
                     </div>
 
-                    {/* Category 3: FAMILIAR */}
+                    {/* Category 3: DEVELOPMENT TOOLS */}
                     <div className="reveal-item flex flex-col gap-3 xl:gap-4">
                         <span className="font-spline text-xs xl:text-sm tracking-[0.15em] text-[#A0A0A0] font-light">
-                            FAMILIAR — USED WHEN NEEDED
+                            DEVELOPMENT TOOLS
                         </span>
-                        <SkillList skills={familiarSkills} variant='familiar' />
+                        <SkillList skills={developmentToolsSkills} />
                     </div>
 
-                </div>
+                    {/* Category 4: DEPLOYMENT */}
+                    <div className="reveal-item flex flex-col gap-3 xl:gap-4">
+                        <span className="font-spline text-xs xl:text-sm tracking-[0.15em] text-[#A0A0A0] font-light">
+                            DEPLOYMENT
+                        </span>
+                        <SkillList skills={deploymentSkills} />
+                    </div>
 
-                {/* Legend */}
-                <div className="reveal-item flex gap-6 xl:gap-8 mt-10 md:mt-14 xl:mt-16">
-                    <div className="flex items-center gap-2">
-                        <span className="w-2.5 h-2.5 rounded-full bg-indigo-500/60 border border-indigo-400/50"></span>
-                        <span className="font-spline text-xs xl:text-sm text-[#A0A0A0] font-light">Core</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <span className="w-2.5 h-2.5 rounded-full bg-teal-500/60 border border-teal-400/50"></span>
-                        <span className="font-spline text-xs xl:text-sm text-[#A0A0A0] font-light">Strong</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/60 border border-yellow-400/50"></span>
-                        <span className="font-spline text-xs xl:text-sm text-[#A0A0A0] font-light">Familiar</span>
-                    </div>
-                </div>
-
-                {/* Development Tools / Environment */}
-                <div className="reveal-item flex flex-col gap-3 xl:gap-4 mt-10 md:mt-12 xl:mt-16">
-                    <span className="font-spline text-xs xl:text-sm tracking-[0.15em] text-[#A0A0A0] font-light">
-                        DEVELOPMENT TOOLS / ENVIRONMENT
-                    </span>
-                    <div className="flex flex-wrap gap-3 xl:gap-4" style={{ contain: 'content' }}>
-                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
-                            <VSCodeIcon />
-                            <span className="font-spline text-sm xl:text-base font-light">VSCode</span>
-                        </div>
-                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
-                            <CursorIcon />
-                            <span className="font-spline text-sm xl:text-base font-light">Cursor</span>
-                        </div>
-                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
-                            <AntigravityIcon />
-                            <span className="font-spline text-sm xl:text-base font-light">Antigravity</span>
-                        </div>
-                        {/* <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
-                            <GodotIcon />
-                            <span className="font-spline text-sm xl:text-base font-light">Godot Engine</span>
-                        </div>
-                        <div className="border border-white/10 bg-white/[0.01] hover:bg-white/[0.03] hover:border-white/20 text-[#A0A0A0] hover:text-white rounded-xl px-4 py-2 xl:px-5 xl:py-2.5 flex items-center gap-2.5 xl:gap-3 transition-colors duration-300 cursor-pointer">
-                            <ArduinoIDEIcon />
-                            <span className="font-spline text-sm xl:text-base font-light">Arduino IDE</span>
-                        </div> */}
-                    </div>
                 </div>
 
             </div>

@@ -12,6 +12,7 @@ function App() {
       <Navbar />
       <main>
         <Home />
+        {/* will-change-transform creates a new layer that is rendered separately by the GPU, making this section loads faster, prevents a flashing white at initial load */}
         <div className="bg-[#101010] will-change-transform">
           <About />
           <Skills />

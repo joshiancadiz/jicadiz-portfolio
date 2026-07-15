@@ -9,6 +9,8 @@ import '@fontsource/spline-sans-mono/400.css'
 import '@fontsource/spline-sans-mono/500.css'
 import '@fontsource/spline-sans-mono/700.css'
 
+// this is used to prevent FOUC (Flash of Unstyled Content), waits for the fonts to load and the DOM document.readyState to be fully loaded before making the entire webpage visible.
+// window.load waits for everything — including large images, embedded videos, or any slow-loading resource anywhere on the page
 const revealPage = () => {
   document.body.style.visibility = 'visible'
 }

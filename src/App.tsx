@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <main>
         <Home />
-        <div className="bg-[#101010]">
+        <div className="bg-[#101010] will-change-transform">
           <About />
           <Skills />
         </div>

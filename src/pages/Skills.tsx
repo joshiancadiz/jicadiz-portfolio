@@ -102,7 +102,7 @@ const Skills = () => {
                         My Tech Stack
                     </h2>
                     <p className="font-spline text-sm md:text-base xl:text-lg font-light text-[#A0A0A0] max-w-[700px] xl:max-w-[800px] mt-1 leading-relaxed">
-                        Grouped by how often I actually use them.
+                        This is what I used to build things.
                     </p>
                 </div>
 

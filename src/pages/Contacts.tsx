@@ -77,7 +77,7 @@ const Contacts = () => {
                         <form onSubmit={handleSubmit} className="flex flex-col gap-5 xl:gap-6">
                             {/* Full Name */}
                             <div className="flex flex-col gap-2">
-                                <label htmlFor="fullName" className="font-spline text-xs xl:text-sm uppercase tracking-[0.15em] text-[#707070] font-light">
+                                <label htmlFor="fullName" className="font-spline text-xs xl:text-sm uppercase tracking-[0.15em] text-[#a0a0a0] font-light">
                                     Full Name
                                 </label>
                                 <input
@@ -94,7 +94,7 @@ const Contacts = () => {
 
                             {/* Email */}
                             <div className="flex flex-col gap-2">
-                                <label htmlFor="email" className="font-spline text-xs xl:text-sm uppercase tracking-[0.15em] text-[#707070] font-light">
+                                <label htmlFor="email" className="font-spline text-xs xl:text-sm uppercase tracking-[0.15em] text-[#a0a0a0] font-light">
                                     Email
                                 </label>
                                 <input
@@ -111,7 +111,7 @@ const Contacts = () => {
 
                             {/* Message */}
                             <div className="flex flex-col gap-2">
-                                <label htmlFor="message" className="font-spline text-xs xl:text-sm uppercase tracking-[0.15em] text-[#707070] font-light">
+                                <label htmlFor="message" className="font-spline text-xs xl:text-sm uppercase tracking-[0.15em] text-[#a0a0a0] font-light">
                                     Message
                                 </label>
                                 <textarea
@@ -130,11 +130,10 @@ const Contacts = () => {
                             <button
                                 type="submit"
                                 disabled={formStatus === 'sending'}
-                                className={`font-spline text-sm xl:text-base font-medium uppercase tracking-[0.15em] rounded-xl px-6 py-3.5 xl:px-8 xl:py-4 transition-all duration-300 cursor-pointer mt-1 ${
-                                    formStatus === 'sending'
+                                className={`font-spline text-sm xl:text-base font-medium uppercase tracking-[0.15em] rounded-xl px-6 py-3.5 xl:px-8 xl:py-4 transition-all duration-300 cursor-pointer mt-1 ${formStatus === 'sending'
                                         ? 'bg-white/5 text-[#505050] border border-white/5 cursor-not-allowed'
                                         : 'bg-white/[0.06] text-white border border-white/15 hover:bg-white/[0.12] hover:border-white/30'
-                                }`}
+                                    }`}
                             >
                                 {formStatus === 'sending' ? 'Sending...' : 'Send Message'}
                             </button>

@@ -119,31 +119,31 @@ export const AwardsCard: React.FC<AwardsCardProps> = ({
 
 export const AWARDS_DATA = [
     {
-        image: "/awards-image/ux-cert.png",
+        image: "/awards-image/ux-cert.webp",
         title: "Foundations of User Exprience Design",
         institution: "Google",
         year: "2024",
     },
     {
-        image: "/awards-image/java-1st-runner-up.jpg",
+        image: "/awards-image/java-1st-runner-up.webp",
         title: "1st Runner-Up, Java Programming Competition",
         institution: "Western Institute of Technology",
         year: "2025",
     },
     {
-        image: "/awards-image/web-dev.jpg",
+        image: "/awards-image/web-dev.webp",
         title: "Web Development",
         institution: "Sololearn",
         year: "2026",
     },
     {
-        image: "/awards-image/programmer-of-the-year.jpg",
+        image: "/awards-image/programmer-of-the-year.webp",
         title: "Programmer of the Year 2026",
         institution: "Western Institute of Technology",
         year: "2026",
     },
     {
-        image: "/awards-image/best-capstone.jpg",
+        image: "/awards-image/best-capstone.webp",
         title: "Best in Thesis — Smart Aquatic Steward",
         institution: "Western Institute of Technology",
         year: "2026",

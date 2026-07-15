@@ -132,7 +132,7 @@ export const AWARDS_DATA = [
     },
     {
         image: "/awards-image/web-dev.webp",
-        title: "Web Development",
+        title: "Web Development Online Course",
         institution: "Sololearn",
         year: "2026",
     },

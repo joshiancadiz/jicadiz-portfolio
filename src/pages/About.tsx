@@ -115,6 +115,33 @@ const About = () => {
 
                 </div>
 
+                {/* Education Section */}
+                <div className="w-full flex flex-col md:flex-row gap-12 md:gap-20 xl:gap-28 items-start mt-16 md:mt-20 xl:mt-28">
+
+                    {/* Left side: Label with arrow icon */}
+                    <div className="reveal-item flex flex-col gap-1 w-[180px] xl:w-[220px] 2xl:w-[240px] shrink-0">
+                        <div className="flex items-center gap-2">
+                            <ArrowIcon className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
+                            <span className="font-spline text-sm md:text-[15px] xl:text-[17px] font-medium text-white tracking-wide">
+                                My Education
+                            </span>
+                        </div>
+                    </div>
+
+                    {/* Right side: Education details */}
+                    <div className="flex-1 flex flex-col gap-6 md:gap-8 xl:gap-10">
+                        <div className="reveal-item flex flex-col gap-3">
+                            <h3 className="font-spline text-xl md:text-2xl xl:text-3xl 2xl:text-[32px] font-medium tracking-tight text-white leading-tight">
+                                Bachelor of Science in Information Technology
+                            </h3>
+                            <p className="font-spline text-xs md:text-sm xl:text-base text-[#A0A0A0] tracking-wide">
+                                Western Institute of Technology (WIT), 2026
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
                 {/* Awards and Certificates Section */}
                 <div className="w-full flex flex-col md:flex-row gap-12 md:gap-20 xl:gap-28 items-start mt-16 md:mt-20 xl:mt-28">
 

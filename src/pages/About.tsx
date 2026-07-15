@@ -1,5 +1,6 @@
 import AboutImage from '../assets/about-me.webp';
 import ArrowIcon from '../components/ui/ArrowIcon';
+import { AwardsCard, AWARDS_DATA } from '../components/ui/AwardsCard';
 
 const About = () => {
 
@@ -110,6 +111,35 @@ const About = () => {
                                 Developed full-stack applications using React/Next.js and integrating with automation tools such as n8n to connect APIs and services to automate content generation workflows, driving significant improvements in business efficiency.
                             </p>
                         </div>
+                    </div>
+
+                </div>
+
+                {/* Awards and Certificates Section */}
+                <div className="w-full flex flex-col md:flex-row gap-12 md:gap-20 xl:gap-28 items-start mt-16 md:mt-20 xl:mt-28">
+
+                    {/* Left side: Label with arrow icon */}
+                    <div className="reveal-item flex flex-col gap-1 w-[180px] xl:w-[220px] 2xl:w-[240px] shrink-0">
+                        <div className="flex items-center gap-2">
+                            <ArrowIcon className="w-3.5 h-3.5 transition-transform duration-300" />
+                            <span className="font-spline text-sm md:text-[15px] xl:text-[17px] font-medium text-white tracking-wide">
+                                Awards and Certificates
+                            </span>
+                        </div>
+                    </div>
+
+                    {/* Right side: Awards cards list in column */}
+                    <div className="flex-1 flex flex-col gap-6 md:gap-8 xl:gap-10 w-full">
+                        {AWARDS_DATA.map((award, index) => (
+                            <div key={index} className="reveal-item w-full max-w-[650px] xl:max-w-[750px] 2xl:max-w-[850px]">
+                                <AwardsCard
+                                    image={award.image}
+                                    title={award.title}
+                                    institution={award.institution}
+                                    year={award.year}
+                                />
+                            </div>
+                        ))}
                     </div>
 
                 </div>

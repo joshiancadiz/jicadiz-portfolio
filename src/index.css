@@ -29,3 +29,14 @@ textarea:-webkit-autofill:focus {
   box-shadow: 0 0 0px 1000px #151515 inset !important;
   transition: background-color 5000s ease-in-out 0s;
 }
+
+/* Lightbox animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

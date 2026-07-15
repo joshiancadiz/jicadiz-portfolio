@@ -26,7 +26,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     try {
         const { data, error } = await resend.emails.send({
             from: 'Portfolio Contact <onboarding@resend.dev>',
-            to: ['placeholder@gmail.com'],
+            to: ['cadiz.joshuaiang@gmail.com'],
             replyTo: email,
             subject: `New inquiry from ${fullName}`,
             html: `

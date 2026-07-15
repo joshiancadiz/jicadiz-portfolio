@@ -55,6 +55,8 @@ export const AwardsCard: React.FC<AwardsCardProps> = ({
                         alt={alt || title}
                         className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                         loading="lazy"
+                        width={800}
+                        height={600}
                         decoding="async"
                     />
                 </div>

@@ -135,7 +135,7 @@ const About = () => {
                                 Bachelor of Science in Information Technology
                             </h3>
                             <p className="font-spline text-xs md:text-sm xl:text-base text-[#A0A0A0] tracking-wide">
-                                Western Institute of Technology (WIT), 2026
+                                completed at Western Institute of Technology, 2026
                             </p>
                         </div>
                     </div>

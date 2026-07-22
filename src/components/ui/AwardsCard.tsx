@@ -146,7 +146,7 @@ export const AWARDS_DATA = [
     },
     {
         image: "/awards-image/best-capstone.webp",
-        title: "Best in Thesis — Smart Aquatic Steward",
+        title: "Best Capstone Project — Smart Aquatic Steward",
         institution: "Western Institute of Technology",
         year: "2026",
     }

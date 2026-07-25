@@ -3,7 +3,7 @@
 const projects = [
     {
         title: "Prismo AI",
-        description: "Prismo AI is a desktop web application built with Next.js that extracts transcripts from YouTube videos and shorts, then processes them through AI-powered tools including translation, enhancement, and paraphrasing, making it a practical productivity tool for content creators.",
+        description: "Prismo AI is a desktop web application built with Next.js that extracts transcripts from YouTube videos and shorts, then processes them through AI integration using Gemini and Groq APIs, powering tools like translation, enhancement, and paraphrasing, making it a practical productivity tool for content repurposing.",
         tech: ["Next.js", "React", "Supabase", "TypeScript", "AI Integration"],
         image: "/projects_image/prismoImg.webp",
         link: "https://github.com/joshiancadiz/prismo",

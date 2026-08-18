@@ -28,20 +28,20 @@ const projects = [
     },
     {
         title: "Type Duel",
-        description: "Joined an online hackathon and collaborated with a teammate to ship a playable MVP game using Godot Engine under time constraints, contributing to character sprite design, game user interface design, and core programming logic.",
+        description: "Joined an online hackathon and collaborated with a teammate to ship a playable MVP game using Godot Engine within a 4-day time limit, contributing to character sprite design, game user interface design, and core programming logic.",
         tech: ["Game Dev", "Godot Engine", "Game UI Design", "Pixel Art"],
         image: "/projects_image/typeduelImg.webp",
         link: "https://github.com/EN-rain/TypeDuel",
         videoDemoLink: "https://drive.google.com/file/d/1JsYtr6tL8czhQCZYeTpBVmgQTS-LFvSa/view?usp=sharing"
     },
-    {
-        title: "Simple Weather App",
-        description: "A simple weather app built with HTML, CSS, and JavaScript that detects the user's location and displays live weather data. It showcases the core foundations of web development.",
-        tech: ["HTML", "CSS", "JavaScript", "API"],
-        image: "/projects_image/weather-appImg.webp",
-        link: "https://github.com/joshiancadiz/weather-app",
-        demoLink: "https://simple-weather-app-nu-ashy.vercel.app"
-    },
+    // {
+    //     title: "Simple Weather App",
+    //     description: "A simple weather app built with HTML, CSS, and JavaScript that detects the user's location and displays live weather data. It showcases the core foundations of web development.",
+    //     tech: ["HTML", "CSS", "JavaScript", "API"],
+    //     image: "/projects_image/weather-appImg.webp",
+    //     link: "https://github.com/joshiancadiz/weather-app",
+    //     demoLink: "https://simple-weather-app-nu-ashy.vercel.app"
+    // },
 ];
 
 const Works = () => {

@@ -68,7 +68,7 @@ const Home = () => {
                 <div className="flex flex-col items-center w-full md:block md:w-fit md:mx-auto relative z-[2]">
                     {/* Title */}
                     <div className="order-1 relative z-[2]">
-                        <h1 ref={titleRef} className="text-[23.5vw] md:text-[13.3vw] xl:text-[12.5vw] leading-[0.8] font-black font-sofia tracking-[-0.06em] flex flex-col md:flex-row items-center justify-center gap-y-0 md:gap-y-0 md:gap-x-[0.04em] whitespace-nowrap">
+                        <h1 ref={titleRef} className="text-[23.5vw] md:text-[13.3vw] xl:text-[12.5vw] leading-[0.8] font-black font-sofia tracking-[-0.06em] flex flex-col md:flex-row items-center justify-center gap-y-2 md:gap-y-0 md:gap-x-[0.3em] whitespace-nowrap">
                             {titleWords.map((word, wordIndex) => (
                                 <span key={wordIndex} className="flex">
                                     {word.split("").map((char, index) => (

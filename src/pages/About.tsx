@@ -48,10 +48,10 @@ const About = () => {
                     <div className="flex-1 flex flex-col gap-6 md:gap-8 xl:gap-10">
                         <div className="reveal-item flex flex-col gap-3">
                             <p className="font-spline text-sm xl:text-base text-[#A0A0A0] tracking-wide">
-                                Junior Software Engineer
+                                Junior Front-End Engineer
                             </p>
                             <h2 className="font-spline text-3xl md:text-4xl lg:text-[40px] xl:text-[46px] 2xl:text-[50px] font-medium tracking-tight text-white leading-tight">
-                                I build interfaces that<br />are fast, clean, and easy to use.
+                                I turn design into <br />interactive interfaces
                             </h2>
                         </div>
 

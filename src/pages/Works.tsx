@@ -3,7 +3,7 @@
 const projects = [
     {
         title: "Prismo AI",
-        description: "Prismo AI is a desktop web application built with Next.js that extracts transcripts from YouTube videos and shorts, then processes them through AI integration using Gemini and Groq APIs, powering tools like translation, enhancement, and paraphrasing, making it a practical productivity tool for content repurposing.",
+        description: "Prismo AI is a desktop web app that turns any YouTube video or short into repurposed content through translation, enhancement, or paraphrasing, all in a clean, unified interface. Built with Next.js and React, it's a practical productivity tool for content repurposing.",
         tech: ["Next.js", "React", "Supabase", "TypeScript", "AI Integration"],
         image: "/projects_image/prismoImg.webp",
         link: "https://github.com/joshiancadiz/prismo",
@@ -11,7 +11,7 @@ const projects = [
     },
     {
         title: "Capstone: Smart Aquatic Steward",
-        description: "An award-winning IoT system that monitors fish tank water parameters such as pH levels, water temperature, and turbidity through water sensors, automates water changes and feeding schedules, that can be controlled through a React Native mobile app.",
+        description: "An award-winning IoT system with a React Native mobile app that lets users remotely monitor fish tank water parameters like pH, temperature, and turbidity, and control automated feeding and water-change schedules, all through a clean, easy-to-navigate interface.",
         tech: ["React Native", "Firebase", "Mobile App", "IoT"],
         image: "/projects_image/logoNobg.webp",
         link: "https://github.com/joshiancadiz/SASapp",
@@ -20,7 +20,7 @@ const projects = [
     },
     {
         title: "Type Duel",
-        description: "Collaborated with a teammate to ship a playable MVP game using Godot Engine within a 4-day hackathon (CodeKada), contributing character sprite design, game UI, and core programming logic.",
+        description: "Collaborated with a teammate to ship a playable MVP game using Godot Engine within a 4-day online hackathon (CodeKada), contributing character sprite design, character animation, game UI, and core programming logic.",
         tech: ["Game Dev", "Godot Engine", "Game UI Design", "Pixel Art"],
         image: "/projects_image/typeduelImg.webp",
         link: "https://github.com/EN-rain/TypeDuel",

@@ -149,6 +149,12 @@ export const AWARDS_DATA = [
         title: "Best Capstone Project — Smart Aquatic Steward",
         institution: "Western Institute of Technology",
         year: "2026",
+    },
+    {
+        image: "/awards-image/codekada.webp",
+        title: "CodeKada: The Online Hackathon",
+        institution: "DevKada",
+        year: "2026",
     }
 ];
 

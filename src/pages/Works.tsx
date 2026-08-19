@@ -19,20 +19,20 @@ const projects = [
         bgColor: "bg-[#D7EAF9]"
     },
     {
+        title: "Type Duel",
+        description: "Joined CodeKada an online hackathon and collaborated with a teammate to ship a playable MVP game using Godot Engine within a 4-day time limit, contributing to character sprite design, game user interface design, and core programming logic.",
+        tech: ["Game Dev", "Godot Engine", "Game UI Design", "Pixel Art"],
+        image: "/projects_image/typeduelImg.webp",
+        link: "https://github.com/EN-rain/TypeDuel",
+        videoDemoLink: "https://drive.google.com/file/d/1JsYtr6tL8czhQCZYeTpBVmgQTS-LFvSa/view?usp=sharing"
+    },
+    {
         title: "Woosh Resto Bar",
         description: "A modern frontend website for Woosh Resto Bar built with React.js, designed with a mobile-first approach to serve as a digital storefront and menu, ensuring a smooth and responsive browsing experience across all devices.",
         tech: ["React.js", "Mobile-First", "Responsive Design"],
         image: "/projects_image/wooshImg.webp",
         link: "https://github.com/joshiancadiz/woosh-resto-bar",
         demoLink: "https://woosh-resto-bar.vercel.app"
-    },
-    {
-        title: "Type Duel",
-        description: "Joined an online hackathon and collaborated with a teammate to ship a playable MVP game using Godot Engine within a 4-day time limit, contributing to character sprite design, game user interface design, and core programming logic.",
-        tech: ["Game Dev", "Godot Engine", "Game UI Design", "Pixel Art"],
-        image: "/projects_image/typeduelImg.webp",
-        link: "https://github.com/EN-rain/TypeDuel",
-        videoDemoLink: "https://drive.google.com/file/d/1JsYtr6tL8czhQCZYeTpBVmgQTS-LFvSa/view?usp=sharing"
     },
     // {
     //     title: "Simple Weather App",

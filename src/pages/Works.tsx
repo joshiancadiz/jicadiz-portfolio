@@ -20,7 +20,7 @@ const projects = [
     },
     {
         title: "Type Duel",
-        description: "Joined CodeKada an online hackathon and collaborated with a teammate to ship a playable MVP game using Godot Engine within a 4-day time limit, contributing to character sprite design, game user interface design, and core programming logic.",
+        description: "Collaborated with a teammate to ship a playable MVP game using Godot Engine within a 4-day hackathon (CodeKada), contributing character sprite design, game UI, and core programming logic.",
         tech: ["Game Dev", "Godot Engine", "Game UI Design", "Pixel Art"],
         image: "/projects_image/typeduelImg.webp",
         link: "https://github.com/EN-rain/TypeDuel",
